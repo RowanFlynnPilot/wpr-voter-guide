@@ -51,6 +51,13 @@ function validateElection(election, instance) {
   if (typeof election.results?.enabled !== 'boolean' || !election.results?.file) {
     fail('election.json results block must have enabled (boolean) and file');
   }
+  if (!election.polls?.open || !election.polls?.close) {
+    fail('election.json polls must have open and close times');
+  }
+  for (const key of ['myvote_home', 'register', 'polling_place', 'absentee', 'wec_hub']) {
+    if (!election.links?.[key]) fail(`election.json links is missing "${key}"`);
+  }
+  if (!Array.isArray(election.explainers)) fail('election.json explainers must be an array');
 }
 
 function validateBallot(ballot, instance) {

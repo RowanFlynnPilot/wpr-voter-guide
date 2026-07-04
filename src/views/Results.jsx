@@ -86,7 +86,7 @@ export default function Results({ guide }) {
                     </span>
                     <span className="results-bar-track">
                       <span
-                        className={`results-bar results-bar-${primary.party.toLowerCase()}`}
+                        className="results-bar"
                         style={{ width: `${Math.round(c.share * 100)}%` }}
                       />
                     </span>

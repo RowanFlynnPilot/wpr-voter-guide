@@ -586,19 +586,13 @@ a {
   background: var(--rule);
 }
 
+/* Bars stay teal: party tints belong on section headers only (CLAUDE.md),
+   and within a single-party primary a party-colored bar adds nothing. */
 .results-bar {
   display: block;
   height: 100%;
   background: var(--teal);
   min-width: 0;
-}
-
-.results-bar-dem {
-  background: var(--dem-tint);
-}
-
-.results-bar-rep {
-  background: var(--rep-tint);
 }
 
 /* Sponsor — landing and how-to-vote only */
