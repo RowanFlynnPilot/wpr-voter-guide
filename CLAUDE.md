@@ -167,8 +167,9 @@ here. When `results.enabled` is true and the fetch fails, show an error state
    Race cards show office, open-seat badge, candidate count per party.
 2. **Race detail** — context paragraph, then candidate cards per primary.
 3. **Questionnaire comparison** — question-by-question, candidates side by
-   side. Renders only when `questions` is non-empty. (Backlog until editorial
-   greenlights.)
+   side, answers verbatim, "Did not respond" for non-responders. Built;
+   renders only when `questions` is non-empty, so it stays invisible until
+   editorial fills in questions and responses.
 4. **How to vote** — deadline timeline with the next upcoming deadline
    emphasized and past deadlines muted (computed from current date), explainer
    blocks, MyVote deep links.

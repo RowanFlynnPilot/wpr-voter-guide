@@ -8,6 +8,7 @@ import HowToVote from './views/HowToVote.jsx';
 import PrintView from './views/PrintView.jsx';
 import NewsletterView from './views/NewsletterView.jsx';
 import Results from './views/Results.jsx';
+import Questionnaire from './views/Questionnaire.jsx';
 
 export default function App() {
   const [guide, setGuide] = useState(null);
@@ -83,6 +84,9 @@ function Route({ route, guide }) {
   const resultsMode = guide.election.results.enabled;
   if (route.length === 0) return resultsMode ? <Results guide={guide} /> : <RaceBrowser guide={guide} />;
   if (route[0] === 'races') return <RaceBrowser guide={guide} />;
+  if (route[0] === 'race' && route[1] && route[2] === 'questionnaire') {
+    return <Questionnaire guide={guide} raceId={route[1]} />;
+  }
   if (route[0] === 'race' && route[1]) return <RaceDetail guide={guide} raceId={route[1]} />;
   if (route[0] === 'vote') return <HowToVote guide={guide} />;
   return (

@@ -26,6 +26,14 @@ export default function RaceDetail({ guide, raceId }) {
       </h2>
       <p className="race-context">{race.context}</p>
 
+      {guide.ballot.questions.some((q) => q.race_id === race.id) && (
+        <p>
+          <a className="questionnaire-link" href={`#/race/${race.id}/questionnaire`}>
+            Compare the candidates in their own words →
+          </a>
+        </p>
+      )}
+
       {race.primaries.map((primary) => (
         <section key={primary.party} className="primary-section">
           <h3 className={`primary-heading primary-heading-${primary.party.toLowerCase()}`}>

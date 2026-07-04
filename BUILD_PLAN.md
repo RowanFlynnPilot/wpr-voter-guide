@@ -63,7 +63,9 @@ pressure. A human, a JSON file, and a commit button finish the race.
 
 ## Backlog (explicitly not v1)
 
-- Questionnaire comparison view (blocked on editorial go)
+- ~~Questionnaire comparison view~~ — built July 4; renders automatically
+  once editorial fills `questions` and candidate responses (the go/no-go
+  decision is still editorial's, and questions must reach candidates ~July 8)
 - November 3 general election: new folder `data/elections/2026-11-03/`,
   same contracts, results mode gets heavier use
 - Second-publication instance (Gavel-style licensing play)

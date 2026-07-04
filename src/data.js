@@ -67,6 +67,19 @@ function validateBallot(ballot, instance) {
   if (!Array.isArray(ballot.races) || ballot.races.length === 0) {
     fail('ballot.json races must be a non-empty array');
   }
+  if (!Array.isArray(ballot.questions)) fail('ballot.json questions must be an array');
+  const questionIdsByRace = new Map();
+  for (const q of ballot.questions) {
+    if (!q.id || !q.race_id || !q.text) {
+      fail(`question "${q.id ?? '(no id)'}" is missing id, race_id, or text`);
+    }
+    if (!ballot.races.some((r) => r.id === q.race_id)) {
+      fail(`question "${q.id}" references unknown race "${q.race_id}"`);
+    }
+    if (!questionIdsByRace.has(q.race_id)) questionIdsByRace.set(q.race_id, new Set());
+    questionIdsByRace.get(q.race_id).add(q.id);
+  }
+
   for (const race of ballot.races) {
     const where = `race "${race.id ?? race.office ?? '(unidentified)'}"`;
     if (!race.id || !race.office || !race.level) {
@@ -91,6 +104,19 @@ function validateBallot(ballot, instance) {
         }
         if (c.status !== 'active' && c.status !== 'suspended') {
           fail(`candidate "${c.id}" has invalid status "${c.status}"`);
+        }
+        if (c.questionnaire !== null) {
+          if (!Array.isArray(c.questionnaire?.responses)) {
+            fail(`candidate "${c.id}" questionnaire must be null or have a responses array`);
+          }
+          for (const r of c.questionnaire.responses) {
+            if (!r.q_id || typeof r.answer !== 'string') {
+              fail(`candidate "${c.id}" has a response missing q_id or answer`);
+            }
+            if (!questionIdsByRace.get(race.id)?.has(r.q_id)) {
+              fail(`candidate "${c.id}" answers unknown question "${r.q_id}" for ${where}`);
+            }
+          }
         }
       }
     }

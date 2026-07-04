@@ -544,6 +544,64 @@ a {
   flex-shrink: 0;
 }
 
+/* Questionnaire comparison */
+.questionnaire-link {
+  font-weight: 600;
+}
+
+.question-section {
+  margin-bottom: 2.25rem;
+}
+
+.question-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  max-width: 42rem;
+}
+
+.question-number {
+  font-family: var(--font-data);
+  font-size: 0.85rem;
+  color: var(--teal);
+  margin-right: 0.35rem;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.answer-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  padding: 0.9rem 1.1rem;
+}
+
+.answer-name {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.answer-text {
+  margin: 0;
+  font-size: 0.92rem;
+  white-space: pre-line;
+}
+
+.answer-none {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 /* Results mode */
 .results-note {
   font-size: 0.9rem;
