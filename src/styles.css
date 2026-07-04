@@ -287,6 +287,118 @@ a {
   font-weight: 600;
 }
 
+/* How to vote */
+.view-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.section-heading {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.35rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.deadline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.deadline {
+  border-left: 3px solid var(--rule);
+  padding: 0.6rem 0 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.deadline-date {
+  margin: 0;
+  font-family: var(--font-data);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.deadline-label {
+  margin: 0.1rem 0 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.deadline-detail {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 40rem;
+}
+
+.deadline-next {
+  border-left-color: var(--teal);
+  background: var(--card);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  padding-right: 1rem;
+}
+
+.deadline-next .deadline-date,
+.deadline-next .deadline-detail {
+  color: var(--ink);
+}
+
+.badge-next {
+  background: var(--teal);
+  color: #fff;
+  margin-left: 0.6rem;
+}
+
+.deadline-past {
+  opacity: 0.55;
+}
+
+.deadline-past-label {
+  margin-left: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.explainer {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.explainer-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.explainer-body {
+  margin: 0.4rem 0 0;
+  font-size: 0.92rem;
+}
+
+.link-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.link-list li {
+  margin-bottom: 0.4rem;
+}
+
 /* Sponsor — landing and how-to-vote only */
 .sponsor {
   margin-top: 2.5rem;

@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { loadGuide } from './data.js';
+import { formatDate } from './dates.js';
 import { useHashRoute } from './router.js';
 import RaceBrowser from './views/RaceBrowser.jsx';
 import RaceDetail from './views/RaceDetail.jsx';
+import HowToVote from './views/HowToVote.jsx';
 
 export default function App() {
   const [guide, setGuide] = useState(null);
@@ -45,6 +47,9 @@ export default function App() {
           <a className={route.length === 0 ? 'nav-active' : ''} href="#/">
             Races
           </a>
+          <a className={route[0] === 'vote' ? 'nav-active' : ''} href="#/vote">
+            How to vote
+          </a>
         </nav>
       </header>
       <main>
@@ -57,19 +62,10 @@ export default function App() {
 function Route({ route, guide }) {
   if (route.length === 0) return <RaceBrowser guide={guide} />;
   if (route[0] === 'race' && route[1]) return <RaceDetail guide={guide} raceId={route[1]} />;
+  if (route[0] === 'vote') return <HowToVote guide={guide} />;
   return (
     <p>
       Page not found. <a href="#/">Back to the guide</a>
     </p>
   );
-}
-
-export function formatDate(iso) {
-  const [y, m, d] = iso.split('-').map(Number);
-  return new Date(y, m - 1, d).toLocaleDateString('en-US', {
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  });
 }
