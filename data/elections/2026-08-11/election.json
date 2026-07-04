@@ -1,0 +1,84 @@
+{
+  "id": "2026-08-11-partisan-primary",
+  "name": "Wisconsin Partisan Primary",
+  "date": "2026-08-11",
+  "type": "partisan_primary",
+  "polls": {
+    "open": "07:00",
+    "close": "20:00",
+    "timezone": "America/Chicago"
+  },
+  "deadlines": [
+    {
+      "id": "register-online",
+      "date": "2026-07-22",
+      "label": "Register online or by mail",
+      "detail": "Last day to register to vote online at MyVote Wisconsin or by mail. After this date, you must register in person.",
+      "link": "https://myvote.wi.gov/en-us/Register-To-Vote"
+    },
+    {
+      "id": "absentee-in-person-start",
+      "date": "2026-07-28",
+      "label": "In-person absentee voting begins",
+      "detail": "Early voting start dates and hours are set by each municipality. Check with your municipal clerk.",
+      "link": "https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail"
+    },
+    {
+      "id": "absentee-request",
+      "date": "2026-08-06",
+      "label": "Request an absentee ballot",
+      "detail": "Deadline (5 p.m.) to request an absentee ballot by mail or online for most voters.",
+      "link": "https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail"
+    },
+    {
+      "id": "register-in-person",
+      "date": "2026-08-07",
+      "label": "Register in person at your clerk's office",
+      "detail": "5 p.m. deadline to register at your municipal clerk's office. You can still register at your polling place on election day with proof of residence.",
+      "link": "https://myvote.wi.gov/en-us/Register-To-Vote"
+    },
+    {
+      "id": "absentee-in-person-end",
+      "date": "2026-08-09",
+      "label": "Last day of in-person absentee voting",
+      "detail": "End dates vary by municipality. Check with your municipal clerk.",
+      "link": "https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail"
+    },
+    {
+      "id": "election-day",
+      "date": "2026-08-11",
+      "label": "Election day",
+      "detail": "Polls are open 7 a.m. to 8 p.m. All absentee ballots must be returned to your polling place or clerk by 8 p.m.",
+      "link": "https://myvote.wi.gov/en-us/Find-My-Polling-Place"
+    }
+  ],
+  "links": {
+    "myvote_home": "https://myvote.wi.gov",
+    "register": "https://myvote.wi.gov/en-us/Register-To-Vote",
+    "polling_place": "https://myvote.wi.gov/en-us/Find-My-Polling-Place",
+    "absentee": "https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail",
+    "wec_hub": "https://elections.wi.gov/2026"
+  },
+  "explainers": [
+    {
+      "id": "open-primary",
+      "title": "Pick one party \u2014 and stay in your lane",
+      "body": "Wisconsin's partisan primary is open: you don't register with a party, and every party's candidates appear on your ballot. But you may only vote in ONE party's primary. If you vote in more than one party's section, your partisan votes will not count."
+    },
+    {
+      "id": "photo-id",
+      "title": "Bring photo ID",
+      "body": "Wisconsin requires an acceptable photo ID to receive a ballot, whether you vote early, absentee, or on election day. A Wisconsin driver's license or state ID card, U.S. passport, military ID, and certain student IDs all qualify."
+    },
+    {
+      "id": "what-this-decides",
+      "title": "What this primary decides",
+      "body": "The August 11 primary chooses each party's nominees for the November 3 general election \u2014 including the first open race for governor since 2010 and the open 7th Congressional District seat that includes the Wausau area."
+    }
+  ],
+  "results": {
+    "enabled": false,
+    "file": "results.json",
+    "poll_seconds": 60
+  }
+}

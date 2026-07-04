@@ -1,0 +1,286 @@
+{
+  "election_id": "2026-08-11-partisan-primary",
+  "races": [
+    {
+      "id": "us-house-wi-07",
+      "office": "U.S. House \u2014 7th Congressional District",
+      "level": "federal",
+      "geography": ["wi-cd-07"],
+      "open_seat": true,
+      "context": "EDITORIAL: Rep. Tom Tiffany is leaving this seat to run for governor, giving northern and central Wisconsin its first open congressional race since 2020. Five Republicans and three Democrats are competing, including a Wausau candidate on the Republican side.",
+      "primaries": [
+        {
+          "party": "DEM",
+          "candidates": [
+            {
+              "id": "armstrong-chris",
+              "name": "Chris Armstrong",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "clark-fred",
+              "name": "Fred Clark",
+              "residence": "Bayfield",
+              "occupation": "Former state representative",
+              "website": "",
+              "bio": "Former director of the conservation group Wisconsin's Green Fire and a former Department of Natural Resources forester. Represented the Baraboo area in the state Assembly.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "murray-ginger",
+              "name": "Ginger Murray",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        },
+        {
+          "party": "REP",
+          "candidates": [
+            {
+              "id": "alfonso-michael",
+              "name": "Michael Alfonso",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "Son-in-law of U.S. Transportation Secretary and former 7th District Rep. Sean Duffy.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "ebben-jessi",
+              "name": "Jessi Ebben",
+              "residence": "Stanley",
+              "occupation": "Public relations professional",
+              "website": "",
+              "bio": "Born in Stevens Point. Ran in the 2020 Republican primary in the 3rd Congressional District.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "hermening-kevin",
+              "name": "Kevin Hermening",
+              "residence": "Wausau",
+              "occupation": "",
+              "website": "",
+              "bio": "Former Marathon County Republican Party chair and Mosinee School Board member.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "threlfall-baum-niina",
+              "name": "Niina Threlfall-Baum",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "wassgren-paul",
+              "name": "Paul Wassgren",
+              "residence": "Ashland",
+              "occupation": "Attorney",
+              "website": "",
+              "bio": "Ashland attorney and businessman.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "level": "statewide",
+      "geography": ["wi"],
+      "open_seat": true,
+      "context": "EDITORIAL: Gov. Tony Evers is not seeking a third term, making this Wisconsin's first open race for governor since 2010. Seven Democrats and two Republicans are on the primary ballot.",
+      "primaries": [
+        {
+          "party": "DEM",
+          "candidates": [
+            {
+              "id": "barnes-mandela",
+              "name": "Mandela Barnes",
+              "residence": "Milwaukee",
+              "occupation": "Former lieutenant governor",
+              "website": "",
+              "bio": "Lieutenant governor from 2019 to 2023 and the 2022 Democratic nominee for U.S. Senate. Former state representative.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "brennan-joel",
+              "name": "Joel Brennan",
+              "residence": "Milwaukee",
+              "occupation": "Former state Department of Administration secretary",
+              "website": "",
+              "bio": "Served in Gov. Evers' cabinet as administration secretary. Former Discovery World president and Greater Milwaukee Committee president.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "crowley-david",
+              "name": "David Crowley",
+              "residence": "Milwaukee",
+              "occupation": "Milwaukee County executive",
+              "website": "",
+              "bio": "First Black Milwaukee County executive, elected in 2020. Former state representative.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "hong-francesca",
+              "name": "Francesca Hong",
+              "residence": "Madison",
+              "occupation": "State representative; chef",
+              "website": "",
+              "bio": "Third-term Assembly representative from Madison and Wisconsin's first Asian American legislator. Chef and former restaurant owner.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "hughes-missy",
+              "name": "Missy Hughes",
+              "residence": "",
+              "occupation": "Former Wisconsin Economic Development Corp. CEO",
+              "website": "",
+              "bio": "Led the Wisconsin Economic Development Corp. from 2019 to 2025.",
+              "status": "suspended",
+              "status_note": "Suspended her campaign on June 22, 2026. Her name remains on the primary ballot.",
+              "questionnaire": null
+            },
+            {
+              "id": "rodriguez-sara",
+              "name": "Sara Rodriguez",
+              "residence": "",
+              "occupation": "Lieutenant governor",
+              "website": "",
+              "bio": "Elected lieutenant governor in 2022. Nurse and former state representative.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "roys-kelda",
+              "name": "Kelda Roys",
+              "residence": "Madison",
+              "occupation": "State senator; attorney",
+              "website": "",
+              "bio": "State senator serving on the Legislature's Joint Finance Committee. Former Assembly representative, born in central Wisconsin.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        },
+        {
+          "party": "REP",
+          "candidates": [
+            {
+              "id": "manske-andy",
+              "name": "Andy Manske",
+              "residence": "",
+              "occupation": "Medical technician",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "tiffany-tom",
+              "name": "Tom Tiffany",
+              "residence": "",
+              "occupation": "U.S. representative, 7th Congressional District",
+              "website": "",
+              "bio": "Represents northern Wisconsin's 7th Congressional District. Former state senator and state representative.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lt-governor",
+      "office": "Lieutenant Governor",
+      "level": "statewide",
+      "geography": ["wi"],
+      "open_seat": true,
+      "context": "EDITORIAL: Lt. Gov. Sara Rodriguez is running for governor rather than seeking re-election. Primary winners will join their party's gubernatorial nominee on the November ticket.",
+      "primaries": [
+        {
+          "party": "DEM",
+          "candidates": [
+            {
+              "id": "godlewski-sarah",
+              "name": "Sarah Godlewski",
+              "residence": "",
+              "occupation": "Wisconsin secretary of state",
+              "website": "",
+              "bio": "Appointed secretary of state in 2023. Former state treasurer.",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        },
+        {
+          "party": "REP",
+          "candidates": [
+            {
+              "id": "martin-will",
+              "name": "Will Martin",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "sablich-cyril",
+              "name": "Cyril Sablich",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": []
+}

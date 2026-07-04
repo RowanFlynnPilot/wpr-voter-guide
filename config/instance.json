@@ -1,0 +1,22 @@
+{
+  "publication": {
+    "id": "wpr",
+    "name": "Wausau Pilot & Review",
+    "url": "https://wausaupilotandreview.com"
+  },
+  "geographies": ["wi", "wi-cd-07", "wi-marathon"],
+  "theme": {
+    "colors": {
+      "primary": "#3A867C",
+      "background": "#f6f2e9",
+      "ink": "#1F1F1F"
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Public Sans",
+      "data": "JetBrains Mono"
+    }
+  },
+  "sponsor": null,
+  "election": "2026-08-11-partisan-primary"
+}
