@@ -280,6 +280,154 @@
           ]
         }
       ]
+    },
+    {
+      "id": "attorney-general",
+      "office": "Attorney General",
+      "level": "statewide",
+      "geography": ["wi"],
+      "open_seat": false,
+      "context": "EDITORIAL DRAFT (unverified, from WEC June 9 ballot access report): Attorney General Josh Kaul is seeking a third term and is unopposed in the Democratic primary. Eric Toney is unopposed in the Republican primary.",
+      "primaries": [
+        {
+          "party": "DEM",
+          "candidates": [
+            {
+              "id": "kaul-josh",
+              "name": "Josh Kaul",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        },
+        {
+          "party": "REP",
+          "candidates": [
+            {
+              "id": "toney-eric",
+              "name": "Eric Toney",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secretary-of-state",
+      "office": "Secretary of State",
+      "level": "statewide",
+      "geography": ["wi"],
+      "open_seat": true,
+      "context": "EDITORIAL DRAFT (unverified, from WEC June 9 ballot access report): Secretary of State Sarah Godlewski is not seeking re-election; she filed a notification of noncandidacy and is running for lieutenant governor. IMPORTANT BEFORE LAUNCH: three additional candidacies (Eileen Newcomer, DEM; Nate Pollnow, REP; Cindy Werner, REP) were marked as challenged, not approved, in the June 9 report and are NOT listed here — verify their final ballot status against WEC certification before this race publishes.",
+      "primaries": [
+        {
+          "party": "DEM",
+          "candidates": [
+            {
+              "id": "zamarripa-jocasta",
+              "name": "JoCasta Zamarripa",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        },
+        {
+          "party": "REP",
+          "candidates": [
+            {
+              "id": "myer-brayden",
+              "name": "Brayden Myer",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "schroeder-jay",
+              "name": "Jay Schroeder",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "state-treasurer",
+      "office": "State Treasurer",
+      "level": "statewide",
+      "geography": ["wi"],
+      "open_seat": false,
+      "context": "EDITORIAL DRAFT (unverified, from WEC June 9 ballot access report): State Treasurer John S. Leiber is unopposed in the Republican primary. Two Democrats, Dylan Helmenstine and Yee Leng Xiong, are competing for their party's nomination.",
+      "primaries": [
+        {
+          "party": "DEM",
+          "candidates": [
+            {
+              "id": "helmenstine-dylan",
+              "name": "Dylan Helmenstine",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            },
+            {
+              "id": "xiong-yee-leng",
+              "name": "Yee Leng Xiong",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        },
+        {
+          "party": "REP",
+          "candidates": [
+            {
+              "id": "leiber-john",
+              "name": "John S. Leiber",
+              "residence": "",
+              "occupation": "",
+              "website": "",
+              "bio": "",
+              "status": "active",
+              "status_note": "",
+              "questionnaire": null
+            }
+          ]
+        }
+      ]
     }
   ],
   "questions": []

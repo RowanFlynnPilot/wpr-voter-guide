@@ -72,6 +72,65 @@
           ]
         }
       ]
+    },
+    {
+      "race_id": "attorney-general",
+      "primaries": [
+        {
+          "party": "DEM",
+          "reporting": "",
+          "candidates": [
+            { "id": "kaul-josh", "votes": 0, "winner": false }
+          ]
+        },
+        {
+          "party": "REP",
+          "reporting": "",
+          "candidates": [
+            { "id": "toney-eric", "votes": 0, "winner": false }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": "secretary-of-state",
+      "primaries": [
+        {
+          "party": "DEM",
+          "reporting": "",
+          "candidates": [
+            { "id": "zamarripa-jocasta", "votes": 0, "winner": false }
+          ]
+        },
+        {
+          "party": "REP",
+          "reporting": "",
+          "candidates": [
+            { "id": "myer-brayden", "votes": 0, "winner": false },
+            { "id": "schroeder-jay", "votes": 0, "winner": false }
+          ]
+        }
+      ]
+    },
+    {
+      "race_id": "state-treasurer",
+      "primaries": [
+        {
+          "party": "DEM",
+          "reporting": "",
+          "candidates": [
+            { "id": "helmenstine-dylan", "votes": 0, "winner": false },
+            { "id": "xiong-yee-leng", "votes": 0, "winner": false }
+          ]
+        },
+        {
+          "party": "REP",
+          "reporting": "",
+          "candidates": [
+            { "id": "leiber-john", "votes": 0, "winner": false }
+          ]
+        }
+      ]
     }
   ]
 }
