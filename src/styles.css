@@ -314,6 +314,42 @@ a {
   font-weight: 600;
 }
 
+/* Stated positions — candidate-published quotes with source links */
+.candidate-positions {
+  margin-top: 0.6rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.5rem;
+}
+
+.positions-heading {
+  margin: 0 0 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.position {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+}
+
+.positions-note {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.positions-none {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 /* How to vote */
 .view-title {
   font-family: var(--font-display);

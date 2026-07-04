@@ -93,6 +93,7 @@ environment detection. Flip it in a commit on election day.
         "website": "",
         "photo": "",             // file name under data/elections/{id}/photos/, "" = none
         "bio": "",
+        "positions": [],         // [{ "topic", "statement", "source_url" }] — see rule 8
         "status": "active",      // active | suspended
         "status_note": "",       // shown as badge detail when suspended
         "questionnaire": null    // null, or { "responses": [{ "q_id", "answer" }] }
@@ -152,6 +153,14 @@ here. When `results.enabled` is true and the fetch fails, show an error state
    in the questionnaire outreach). A candidate without a photo gets a
    neutral initials placeholder in the identical frame — never a stock
    image. See data/elections/{id}/photos/README.md.
+8. `positions` entries are **verbatim quotes from the candidate's own
+   published campaign materials**, each with a `source_url` citation —
+   never news quotes, social media grabs, voting-record summaries, or
+   paraphrases. Editorial selects and verifies them. The block activates
+   race-wide: once any candidate in a race has entries, candidates without
+   any show "No stated positions available" — like "Did not respond,"
+   that absence is information, but remember it can also mean a thin web
+   presence rather than a choice.
 
 ## Design System (WPR standard)
 

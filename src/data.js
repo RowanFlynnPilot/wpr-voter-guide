@@ -105,6 +105,14 @@ function validateBallot(ballot, instance) {
         if (c.status !== 'active' && c.status !== 'suspended') {
           fail(`candidate "${c.id}" has invalid status "${c.status}"`);
         }
+        if (!Array.isArray(c.positions)) {
+          fail(`candidate "${c.id}" positions must be an array`);
+        }
+        for (const p of c.positions) {
+          if (!p.topic || !p.statement || !p.source_url) {
+            fail(`candidate "${c.id}" has a position missing topic, statement, or source_url — every stated position must cite its source`);
+          }
+        }
         if (c.questionnaire !== null) {
           if (!Array.isArray(c.questionnaire?.responses)) {
             fail(`candidate "${c.id}" questionnaire must be null or have a responses array`);
