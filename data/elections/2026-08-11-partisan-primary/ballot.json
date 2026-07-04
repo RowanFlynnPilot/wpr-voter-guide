@@ -19,10 +19,26 @@
               "name": "Chris Armstrong",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://www.armstrongforwisconsin.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Enforce the Laws We Already Have",
+                  "statement": "This country has plenty of laws. What we need more of is elected officials with the spine to enforce the laws we already have and use every tool at their disposal to stop this administration in its tracks.",
+                  "source_url": "https://www.armstrongforwisconsin.com/policies/"
+                },
+                {
+                  "topic": "Impeach. All of Them.",
+                  "statement": "Donald Trump. Kristi Noem (you're fired!). Pam Bondi (you're fired!). RFK Jr. Pete Hegseth. Marco Rubio.",
+                  "source_url": "https://www.armstrongforwisconsin.com/policies/"
+                },
+                {
+                  "topic": "Abolish ICE",
+                  "statement": "ICE cannot be fixed. The culture is broken, the tactics are lawless, and the institutional contempt for due process and human dignity runs too deep to patch up with new leadership and a fresh coat of paint.",
+                  "source_url": "https://www.armstrongforwisconsin.com/policies/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -32,10 +48,26 @@
               "name": "Fred Clark",
               "residence": "Bayfield",
               "occupation": "Former state representative",
-              "website": "",
+              "website": "https://clarkforwi.com",
               "photo": "",
               "bio": "Former director of the conservation group Wisconsin's Green Fire and a former Department of Natural Resources forester. Represented the Baraboo area in the state Assembly.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "A Real Affordability Agenda",
+                  "statement": "In Northern Wisconsin, many working families just can't keep up. In the last 50 years the costs of housing, healthcare, childcare, transportation, and college or post-high school education have all risen dramatically faster than wages.",
+                  "source_url": "https://clarkforwi.com/issues/a-real-affordability-agenda"
+                },
+                {
+                  "topic": "Health Care for Everyone",
+                  "statement": "There is no reason the wealthiest country in the world should live with the most expensive health care in the world, that leaves millions without coverage, while insurance companies reap record profits.",
+                  "source_url": "https://clarkforwi.com/issues/issue-2"
+                },
+                {
+                  "topic": "Supporting Women's Rights and Women's Health",
+                  "statement": "As a candidate and as a former legislator I have firmly supported women's freedom to make choices about reproductive care with their doctors, and I have consistently supported funding and access to a full range of reproductive health care for women of all ages including contraception.",
+                  "source_url": "https://clarkforwi.com/issues/supporting-womens-rights-and-womens-health"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -45,10 +77,26 @@
               "name": "Ginger Murray",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://gingerforus.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Murray Speaks Out Against Costs of War",
+                  "statement": "Americans should not be burdended with the cost of President Trump's war against Iran.",
+                  "source_url": "https://gingerforus.com/issues"
+                },
+                {
+                  "topic": "Unprovoked, Unwarranted, and Unconstitutional",
+                  "statement": "\"This war was unprovoked, unwarranted, and unconstitutional,\" said Ginger Murray, responding to the President's decision to begin military action in Iran.",
+                  "source_url": "https://gingerforus.com/issues"
+                },
+                {
+                  "topic": "Ginger Murray Calls For An End To Dark Money In Politics",
+                  "statement": "Dark money is drowning out the voices of everyday Americans.",
+                  "source_url": "https://gingerforus.com/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -63,10 +111,26 @@
               "name": "Michael Alfonso",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://www.alfonsoforwisconsin.com",
               "photo": "",
               "bio": "Son-in-law of U.S. Transportation Secretary and former 7th District Rep. Sean Duffy.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Save the American Dream",
+                  "statement": "Young Americans shouldn't be priced out of homeownership. Michael Alfonso will rein in spending, cut red tape, and make it possible for young families to own homes again and build secure, hopeful futures.",
+                  "source_url": "https://www.alfonsoforwisconsin.com/issues/"
+                },
+                {
+                  "topic": "Make Farms & Families Strong Again",
+                  "statement": "Strong farms mean strong families, and strong families mean a strong America. Michael Alfonso will cut burdensome restrictions, support local agriculture, and make healthy food affordable so we can fight chronic illness and prevent childhood obesity.",
+                  "source_url": "https://www.alfonsoforwisconsin.com/issues/"
+                },
+                {
+                  "topic": "Bring Back Freedom in Education",
+                  "statement": "Parents — not bureaucrats — should decide what's best for their children. Michael Alfonso will support school choice, boost homeschooling protections, and end Marxist race and gender indoctrination in classrooms.",
+                  "source_url": "https://www.alfonsoforwisconsin.com/issues/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -76,10 +140,26 @@
               "name": "Jessi Ebben",
               "residence": "Stanley",
               "occupation": "Public relations professional",
-              "website": "",
+              "website": "https://ebbenforwisconsin.com",
               "photo": "",
               "bio": "Born in Stevens Point. Ran in the 2020 Republican primary in the 3rd Congressional District.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Standing with President Trump",
+                  "statement": "Jessi is proud to have knocked thousands of doors for President Donald J. Trump and other conservative candidates. Like President Trump, she believes the American Dream is slipping out of reach because of previously enacted bad policy by weak leaders.",
+                  "source_url": "https://ebbenforwisconsin.com/issues"
+                },
+                {
+                  "topic": "Border Security",
+                  "statement": "A nation without secure borders cannot remain free or safe. Jessi will support finishing the wall, stopping the flow of illegal drugs like fentanyl into our communities, and giving law enforcement the tools they need to secure the border.",
+                  "source_url": "https://ebbenforwisconsin.com/issues"
+                },
+                {
+                  "topic": "Second Amendment and Hunting",
+                  "statement": "Jessi is a card-carrying member of the National Rifle Association. She is also a member of Gun Owners of America and Hunter Nation.",
+                  "source_url": "https://ebbenforwisconsin.com/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -89,7 +169,7 @@
               "name": "Kevin Hermening",
               "residence": "Wausau",
               "occupation": "",
-              "website": "",
+              "website": "https://kevinhermening.com",
               "photo": "",
               "bio": "Former Marathon County Republican Party chair and Mosinee School Board member.",
               "positions": [],
@@ -102,10 +182,26 @@
               "name": "Niina Threlfall-Baum",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://baumforwisconsin.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "AI Data Center Moratorium",
+                  "statement": "Large-scale AI and data center development is increasingly targeting rural communities, often with promises of economic growth that do not always reflect the full long-term costs.",
+                  "source_url": "https://baumforwisconsin.com/my-platform/"
+                },
+                {
+                  "topic": "Farms & Food Stability",
+                  "statement": "I grew up on a northern Wisconsin dairy farm, and today almost all of the farms that once operated in my community no longer exist.",
+                  "source_url": "https://baumforwisconsin.com/my-platform/"
+                },
+                {
+                  "topic": "Workforce",
+                  "statement": "I have spent my career working in and alongside rural communities, and I have put that commitment into action.",
+                  "source_url": "https://baumforwisconsin.com/my-platform/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -115,10 +211,26 @@
               "name": "Paul Wassgren",
               "residence": "Ashland",
               "occupation": "Attorney",
-              "website": "",
+              "website": "https://paulwassgren.com",
               "photo": "",
               "bio": "Ashland attorney and businessman.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Creating Economic Opportunity",
+                  "statement": "Paul has championed Opportunity Zones and worked closely with President Trump's team to expand economic growth across the country during his first term.",
+                  "source_url": "https://paulwassgren.com/#issues"
+                },
+                {
+                  "topic": "Fighting Back Against Lawfare",
+                  "statement": "Our judicial system has been weaponized by bad actors looking to settle scores and make money.",
+                  "source_url": "https://paulwassgren.com/#issues"
+                },
+                {
+                  "topic": "Building Stronger Communities",
+                  "statement": "Social problems like addiction, homelessness, and violent crime have become far too common in our country and even in the Seventh Congressional District.",
+                  "source_url": "https://paulwassgren.com/#issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -145,10 +257,26 @@
               "name": "Mandela Barnes",
               "residence": "Milwaukee",
               "occupation": "Former lieutenant governor",
-              "website": "",
+              "website": "https://www.mandelabarnes.com",
               "photo": "",
               "bio": "Lieutenant governor from 2019 to 2023 and the 2022 Democratic nominee for U.S. Senate. Former state representative.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Tax The Rich To Lower Costs For Wisconsin Families",
+                  "statement": "Corporate greed is hollowing out Wisconsin—killing family farms, shipping jobs overseas, and leaving working families to foot the bill while out-of-state corporations pay nothing in taxes.",
+                  "source_url": "https://www.mandelabarnes.com/wisconsinway"
+                },
+                {
+                  "topic": "Freeze the Rates",
+                  "statement": "Wisconsin's utility monopolies rake in some of the highest profit margins in the entire nation while our bills skyrocket. That's not a coincidence.",
+                  "source_url": "https://www.mandelabarnes.com/wisconsinway"
+                },
+                {
+                  "topic": "Expand BadgerCare, Create Public Option and Forgive Medical Debt",
+                  "statement": "As Governor, I will expand BadgerCare on Day One and pass a public option.",
+                  "source_url": "https://www.mandelabarnes.com/wisconsinway"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -158,10 +286,26 @@
               "name": "Joel Brennan",
               "residence": "Milwaukee",
               "occupation": "Former state Department of Administration secretary",
-              "website": "",
+              "website": "https://www.brennanforwi.com",
               "photo": "",
               "bio": "Served in Gov. Evers' cabinet as administration secretary. Former Discovery World president and Greater Milwaukee Committee president.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "MAKING life MORE AFFORDABLE",
+                  "statement": "Joel grew up one of 11 kids. His family had to make every dollar count.",
+                  "source_url": "https://www.brennanforwi.com/issues"
+                },
+                {
+                  "topic": "PROTECTING OUR WISCONSIN WAY OF LIFE",
+                  "statement": "Wisconsin is a place where we believe in working hard, playing by the rules, and looking out for each other. Our government should do the same.",
+                  "source_url": "https://www.brennanforwi.com/issues"
+                },
+                {
+                  "topic": "BUILDING A GOVERNMENT THAT WORKS FOR YOU",
+                  "statement": "Joel spent 25 years building things that work — a science museum, a state budget, public-private partnerships, a COVID relief program. He's not interested in chaos or credit.",
+                  "source_url": "https://www.brennanforwi.com/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -171,10 +315,26 @@
               "name": "David Crowley",
               "residence": "Milwaukee",
               "occupation": "Milwaukee County executive",
-              "website": "",
+              "website": "https://www.crowleyforwi.com",
               "photo": "",
               "bio": "First Black Milwaukee County executive, elected in 2020. Former state representative.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Jobs and Wages That Build Futures",
+                  "statement": "Crowley will grow an economy rooted in local ownership and union labor.",
+                  "source_url": "https://www.crowleyforwi.com/Plan"
+                },
+                {
+                  "topic": "Expanding the Middle Class",
+                  "statement": "As Governor, Crowley will modernize and expand apprenticeship programs—connecting young people and career-changers to opportunities in the trades, health care, green energy, and beyond.",
+                  "source_url": "https://www.crowleyforwi.com/Plan"
+                },
+                {
+                  "topic": "Entrepreneurship That Works Everywhere",
+                  "statement": "Crowley will make Wisconsin the best place in the Midwest to start and grow a small business — whether you're opening a bakery in Beloit, running a barbershop in Wausau, or launching a biotech startup in Eau Claire.",
+                  "source_url": "https://www.crowleyforwi.com/Plan"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -184,10 +344,26 @@
               "name": "Francesca Hong",
               "residence": "Madison",
               "occupation": "State representative; chef",
-              "website": "",
+              "website": "https://francescahong.com",
               "photo": "",
               "bio": "Third-term Assembly representative from Madison and Wisconsin's first Asian American legislator. Chef and former restaurant owner.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Children & Schools",
+                  "statement": "No child should go hungry. We have the means to help.",
+                  "source_url": "https://francescahong.com/policy/"
+                },
+                {
+                  "topic": "Workers",
+                  "statement": "Nobody should have to decide between paying the bills and taking care of themselves or a sick family member.",
+                  "source_url": "https://francescahong.com/policy/"
+                },
+                {
+                  "topic": "Healthcare",
+                  "statement": "The only health finance model that can address the core issues of our healthcare system is federal Medicare for All.",
+                  "source_url": "https://francescahong.com/policy/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -197,10 +373,16 @@
               "name": "Missy Hughes",
               "residence": "",
               "occupation": "Former Wisconsin Economic Development Corp. CEO",
-              "website": "",
+              "website": "https://www.missyforgovernor.com",
               "photo": "",
               "bio": "Led the Wisconsin Economic Development Corp. from 2019 to 2025.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "As Governor, Missy Will Create a Main Street Economy",
+                  "statement": "Ensure Wisconsinites have higher wages and housing they can afford",
+                  "source_url": "https://www.missyforgovernor.com/"
+                }
+              ],
               "status": "suspended",
               "status_note": "Suspended her campaign on June 22, 2026. Her name remains on the primary ballot.",
               "questionnaire": null
@@ -210,10 +392,26 @@
               "name": "Sara Rodriguez",
               "residence": "",
               "occupation": "Lieutenant governor",
-              "website": "",
+              "website": "https://www.saraforwi.com",
               "photo": "",
               "bio": "Elected lieutenant governor in 2022. Nurse and former state representative.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Make Health Care More Affordable",
+                  "statement": "As governor, Sara Rodriguez will lower prices and guarantee affordable, reliable health care for every person in Wisconsin.",
+                  "source_url": "https://www.saraforwi.com/issues"
+                },
+                {
+                  "topic": "Cut Your Property Taxes",
+                  "statement": "As governor, Sara Rodriguez will lower property taxes for Wisconsin residents.",
+                  "source_url": "https://www.saraforwi.com/issues"
+                },
+                {
+                  "topic": "Make Child Care Affordable for Families",
+                  "statement": "As governor, Sara Rodriguez will make child care affordable and accessible for Wisconsin's working families.",
+                  "source_url": "https://www.saraforwi.com/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -223,10 +421,26 @@
               "name": "Kelda Roys",
               "residence": "Madison",
               "occupation": "State senator; attorney",
-              "website": "",
+              "website": "https://www.keldaroys.com",
               "photo": "",
               "bio": "State senator serving on the Legislature's Joint Finance Committee. Former Assembly representative, born in central Wisconsin.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "STANDING UP TO TRUMP AND TIFFANY",
+                  "statement": "President Trump and Congressman Tiffany's policies are making us all less safe, less free, less prosperous, and less healthy.",
+                  "source_url": "https://www.keldaroys.com/issues"
+                },
+                {
+                  "topic": "CREATING ECONOMIC OPPORTUNITY FOR ALL",
+                  "statement": "Wages are not keeping up with the rising costs of groceries, rent and housing expenses, healthcare, prescription drugs, utilities, transportation, or childcare.",
+                  "source_url": "https://www.keldaroys.com/issues"
+                },
+                {
+                  "topic": "CHAMPIONING PUBLIC EDUCATION",
+                  "statement": "A high quality public education is the birthright of every Wisconsin child — from early childhood to higher ed.",
+                  "source_url": "https://www.keldaroys.com/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -241,10 +455,26 @@
               "name": "Andy Manske",
               "residence": "",
               "occupation": "Medical technician",
-              "website": "",
+              "website": "https://andymanske4governor.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Property Taxes",
+                  "statement": "Originally I wanted to go all the way and say after 30 years you shouldn't have to pay for your home anymore.",
+                  "source_url": "https://andymanske4governor.com/platform/"
+                },
+                {
+                  "topic": "Transparent Elections With Verifiable Results",
+                  "statement": "I am a big believer that elections should be secure, and nobody should leave election day feeling unsure if their vote was counted.",
+                  "source_url": "https://andymanske4governor.com/platform/"
+                },
+                {
+                  "topic": "Republican Healthcare",
+                  "statement": "I am bringing my own idea of a new plan to the office and public. It is not government run, but government adjacent.",
+                  "source_url": "https://andymanske4governor.com/platform/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -254,10 +484,26 @@
               "name": "Tom Tiffany",
               "residence": "",
               "occupation": "U.S. representative, 7th Congressional District",
-              "website": "",
+              "website": "https://tomtiffany.com",
               "photo": "",
               "bio": "Represents northern Wisconsin's 7th Congressional District. Former state senator and state representative.",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Lower Costs for Every Wisconsinite",
+                  "statement": "Alongside President Trump, Tom delivered the largest tax cut in history for working families, seniors, and small businesses. He ended taxes on tips, overtime, and Social Security.",
+                  "source_url": "https://tomtiffany.com/solutions/"
+                },
+                {
+                  "topic": "Restore Order and Create Opportunity",
+                  "statement": "Tom will restore order and create opportunity for our great state. That means building again. Manufacturing again.",
+                  "source_url": "https://tomtiffany.com/solutions/"
+                },
+                {
+                  "topic": "Prepare Kids for Success",
+                  "statement": "When Tom talks to parents across Wisconsin—from Milwaukee to Hayward, Green Bay to Eau Claire—they all say the same thing: they want schools that actually prepare their kids for success.",
+                  "source_url": "https://tomtiffany.com/solutions/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -284,7 +530,7 @@
               "name": "Sarah Godlewski",
               "residence": "",
               "occupation": "Wisconsin secretary of state",
-              "website": "",
+              "website": "https://www.sarahforwisconsin.com",
               "photo": "",
               "bio": "Appointed secretary of state in 2023. Former state treasurer.",
               "positions": [],
@@ -302,10 +548,21 @@
               "name": "Will Martin",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://votewillmartin.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Powering Wisconsin's Future",
+                  "statement": "For far too long, energy production and environmental stewardship have been treated as competing goals. I reject that premise.",
+                  "source_url": "https://votewillmartin.com/powering-wisconsins-future"
+                },
+                {
+                  "topic": "Back the Blue & Red: A Plan for a Safer Wisconsin",
+                  "statement": "Public safety is the first responsibility of state and local government. Every day, Wisconsin's law enforcement officers, firefighters, EMS workers, and 911 dispatchers protect the people of our state, yet they often do not receive the support and appreciation they deserve from leadership.",
+                  "source_url": "https://votewillmartin.com/backing-the-blue-and-red"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -345,7 +602,7 @@
               "name": "Josh Kaul",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://joshkaul.org",
               "photo": "",
               "bio": "",
               "positions": [],
@@ -363,10 +620,26 @@
               "name": "Eric Toney",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://erictoney.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Fighting Violent Crime",
+                  "statement": "Law and order are on the line. Violent criminals walk free while families live in fear.",
+                  "source_url": "https://erictoney.com/"
+                },
+                {
+                  "topic": "Confronting the Drug Crisis",
+                  "statement": "Fentanyl and meth are flooding into our communities, killing our kids, and fueling crime.",
+                  "source_url": "https://erictoney.com/"
+                },
+                {
+                  "topic": "Fixing Our Crime Labs",
+                  "statement": "When crime labs fail, justice fails. I'll clean up the mess—modernize our labs, end the backlog, and hold leadership accountable.",
+                  "source_url": "https://erictoney.com/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -393,10 +666,26 @@
               "name": "JoCasta Zamarripa",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://votejocasta.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Cost of Living",
+                  "statement": "Across Wisconsin, families are feeling squeezed. Prices are up, but wages and support haven't kept pace.",
+                  "source_url": "https://votejocasta.com/issues"
+                },
+                {
+                  "topic": "Housing Affordability",
+                  "statement": "JoCasta has led the way on housing solutions in Milwaukee and understands how deeply the affordability crisis is affecting families across the state.",
+                  "source_url": "https://votejocasta.com/issues"
+                },
+                {
+                  "topic": "Access to Affordable Child Care",
+                  "statement": "The rising cost and limited availability of child care is holding back families and our economy.",
+                  "source_url": "https://votejocasta.com/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -411,10 +700,26 @@
               "name": "Brayden Myer",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://braydenmyer.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Vision",
+                  "statement": "After half a century of failed Democratic leadership, the Secretary of State's office is a shadow of its former self.",
+                  "source_url": "https://braydenmyer.com/#vision"
+                },
+                {
+                  "topic": "Vision",
+                  "statement": "Brayden will work to form an easily accessible digital database of all the records this office holds and overlooks.",
+                  "source_url": "https://braydenmyer.com/#vision"
+                },
+                {
+                  "topic": "Vision",
+                  "statement": "Brayden believes timeliness is essential for a government to properly serve its citizens.",
+                  "source_url": "https://braydenmyer.com/#vision"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -424,10 +729,26 @@
               "name": "Jay Schroeder",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://jayforwisconsin.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "The Vision",
+                  "statement": "The Secretary of State is elected, so voters can directly hold them accountable for how our elections are run.",
+                  "source_url": "https://jayforwisconsin.com/"
+                },
+                {
+                  "topic": "The Mission",
+                  "statement": "36 states put elections under the Secretary of State. Along with overseeing public records and land funds, the office must stand for transparency and accountability.",
+                  "source_url": "https://jayforwisconsin.com/"
+                },
+                {
+                  "topic": "The Plan",
+                  "statement": "Push the Legislature to restore elections to the Secretary of State from the corrupt WEC—by referendum if needed. Wisconsin's election integrity cannot be compromised.",
+                  "source_url": "https://jayforwisconsin.com/"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -454,10 +775,26 @@
               "name": "Dylan Helmenstine",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://www.dylanforwi.com",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "1. Clarity on the Systems That Impact us Today",
+                  "statement": "Through careful planning and citizen involvement, Wisconsinites can come together to move our economy forward. But right now, our broken funding rules, overlapping levels of government, and outdated laws are getting in the way of that.",
+                  "source_url": "https://www.dylanforwi.com/priorities"
+                },
+                {
+                  "topic": "2. The State Budget's Impacts Today",
+                  "statement": "Budgets are statements of our values. That is true for our family, business, and government budgets alike.",
+                  "source_url": "https://www.dylanforwi.com/priorities"
+                },
+                {
+                  "topic": "3. An Engine to Move Our State Forward",
+                  "statement": "It is time to revive the State Treasurer's role in pulling people together to find new ways forward for Wisconsin communities. Our broken systems of governance and funding are holding us back.",
+                  "source_url": "https://www.dylanforwi.com/priorities"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -467,10 +804,26 @@
               "name": "Yee Leng Xiong",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://yeeforwi.vote",
               "photo": "",
               "bio": "",
-              "positions": [],
+              "positions": [
+                {
+                  "topic": "Protect & Grow Wisconsin's School Trust Fund",
+                  "statement": "Every dollar invested wisely means more resources for our kids.",
+                  "source_url": "https://yeeforwi.vote/issues"
+                },
+                {
+                  "topic": "Support Local Communities with Smart Infrastructure Investment",
+                  "statement": "Helping communities build what they need—without overburdening taxpayers.",
+                  "source_url": "https://yeeforwi.vote/issues"
+                },
+                {
+                  "topic": "Fiscal Responsibility & Transparent Government",
+                  "statement": "A Treasurer who treats your money with respect.",
+                  "source_url": "https://yeeforwi.vote/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null
@@ -485,7 +838,7 @@
               "name": "John S. Leiber",
               "residence": "",
               "occupation": "",
-              "website": "",
+              "website": "https://leiberfortreasurer.com",
               "photo": "",
               "bio": "",
               "positions": [],

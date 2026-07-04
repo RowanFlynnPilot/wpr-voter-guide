@@ -14,7 +14,10 @@ Human/editorial tasks, not code:
       deliberately absent from the seed — every race in ballot.json must be
       render-ready (see CLAUDE.md invariant). Note: Josh Kaul (D) is seeking
       a third term as AG.
-- [ ] Add campaign `website` URLs for all seeded candidates.
+- [ ] Add campaign `website` URLs for all seeded candidates. (Drafted
+      July 4 from verified campaign sites, along with draft `positions`
+      quotes — both unverified; see the DRAFT commits and verify against
+      live sites. Cyril Sablich has no findable site.)
 - [ ] Editorial verification pass (Shereen): every `bio`, `occupation`,
       `residence` checked against WEC filings / campaign sites. Seeded values
       came from news coverage and are starting points, not verified facts.
