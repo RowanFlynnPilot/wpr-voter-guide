@@ -12,7 +12,8 @@ function staticData() {
     name: 'wpr-static-data',
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
-        const url = req.url.split('?')[0];
+        // Dev URLs include the configured base; strip it to get repo paths.
+        const url = req.url.split('?')[0].replace(server.config.base, '/');
         const root = roots.find((r) => url.startsWith(`/${r}/`));
         if (!root) return next();
         const file = resolve(process.cwd(), '.' + url);
