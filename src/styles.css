@@ -496,6 +496,27 @@ a {
   }
 }
 
+/* /newsletter */
+.newsletter-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+.newsletter-tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.newsletter-tools .print-button {
+  float: none;
+  flex-shrink: 0;
+}
+
 /* Sponsor — landing and how-to-vote only */
 .sponsor {
   margin-top: 2.5rem;

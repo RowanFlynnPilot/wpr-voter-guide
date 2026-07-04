@@ -6,6 +6,7 @@ import RaceBrowser from './views/RaceBrowser.jsx';
 import RaceDetail from './views/RaceDetail.jsx';
 import HowToVote from './views/HowToVote.jsx';
 import PrintView from './views/PrintView.jsx';
+import NewsletterView from './views/NewsletterView.jsx';
 
 export default function App() {
   const [guide, setGuide] = useState(null);
@@ -34,6 +35,7 @@ export default function App() {
 
   // Standalone routes render without the app shell.
   if (route[0] === 'print') return <PrintView guide={guide} />;
+  if (route[0] === 'newsletter') return <NewsletterView guide={guide} />;
 
   return (
     <div className="app">
