@@ -18,6 +18,13 @@ before those ship (not built yet; one small code change when first needed).
 Decision column: leave blank = undecided · `USE` (+ credit text if needed)
 · `ASK CAMPAIGN` · `SKIP` (placeholder stays).
 
+**Update, July 4:** the nine verified freely licensed photos (PD/CC) were
+integrated with `photo_credit` attribution lines — Tiffany, Clark, Barnes,
+Hong, Rodriguez, Kaul, Zamarripa, Toney, Godlewski — marked INTEGRATED
+below. Each was visually confirmed to be a portrait of the right person;
+editorial should still spot-check identity and license per row. Everyone
+else still needs the permission emails listed under batch actions.
+
 ## Cleanest licenses in the whole field
 
 Only two photos are unambiguously safe today:

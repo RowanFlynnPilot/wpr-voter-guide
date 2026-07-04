@@ -21,6 +21,7 @@
               "occupation": "",
               "website": "https://www.armstrongforwisconsin.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -49,7 +50,8 @@
               "residence": "Bayfield",
               "occupation": "Former state representative",
               "website": "https://clarkforwi.com",
-              "photo": "",
+              "photo": "clark-fred.jpg",
+              "photo_credit": "Jeremy Oswald / CC BY-SA 4.0",
               "bio": "Former director of the conservation group Wisconsin's Green Fire and a former Department of Natural Resources forester. Represented the Baraboo area in the state Assembly.",
               "positions": [
                 {
@@ -79,6 +81,7 @@
               "occupation": "",
               "website": "https://gingerforus.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -113,6 +116,7 @@
               "occupation": "",
               "website": "https://www.alfonsoforwisconsin.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "Son-in-law of U.S. Transportation Secretary and former 7th District Rep. Sean Duffy.",
               "positions": [
                 {
@@ -142,6 +146,7 @@
               "occupation": "Public relations professional",
               "website": "https://ebbenforwisconsin.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "Born in Stevens Point. Ran in the 2020 Republican primary in the 3rd Congressional District.",
               "positions": [
                 {
@@ -171,6 +176,7 @@
               "occupation": "",
               "website": "https://kevinhermening.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "Former Marathon County Republican Party chair and Mosinee School Board member.",
               "positions": [],
               "status": "active",
@@ -184,6 +190,7 @@
               "occupation": "",
               "website": "https://baumforwisconsin.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -213,6 +220,7 @@
               "occupation": "Attorney",
               "website": "https://paulwassgren.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "Ashland attorney and businessman.",
               "positions": [
                 {
@@ -258,7 +266,8 @@
               "residence": "Milwaukee",
               "occupation": "Former lieutenant governor",
               "website": "https://www.mandelabarnes.com",
-              "photo": "",
+              "photo": "barnes-mandela.jpg",
+              "photo_credit": "Susan Ruggles / CC BY 2.0",
               "bio": "Lieutenant governor from 2019 to 2023 and the 2022 Democratic nominee for U.S. Senate. Former state representative.",
               "positions": [
                 {
@@ -288,6 +297,7 @@
               "occupation": "Former state Department of Administration secretary",
               "website": "https://www.brennanforwi.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "Served in Gov. Evers' cabinet as administration secretary. Former Discovery World president and Greater Milwaukee Committee president.",
               "positions": [
                 {
@@ -317,6 +327,7 @@
               "occupation": "Milwaukee County executive",
               "website": "https://www.crowleyforwi.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "First Black Milwaukee County executive, elected in 2020. Former state representative.",
               "positions": [
                 {
@@ -345,7 +356,8 @@
               "residence": "Madison",
               "occupation": "State representative; chef",
               "website": "https://francescahong.com",
-              "photo": "",
+              "photo": "hong-francesca.jpg",
+              "photo_credit": "",
               "bio": "Third-term Assembly representative from Madison and Wisconsin's first Asian American legislator. Chef and former restaurant owner.",
               "positions": [
                 {
@@ -375,6 +387,7 @@
               "occupation": "Former Wisconsin Economic Development Corp. CEO",
               "website": "https://www.missyforgovernor.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "Led the Wisconsin Economic Development Corp. from 2019 to 2025.",
               "positions": [
                 {
@@ -393,7 +406,8 @@
               "residence": "",
               "occupation": "Lieutenant governor",
               "website": "https://www.saraforwi.com",
-              "photo": "",
+              "photo": "rodriguez-sara.jpg",
+              "photo_credit": "",
               "bio": "Elected lieutenant governor in 2022. Nurse and former state representative.",
               "positions": [
                 {
@@ -423,6 +437,7 @@
               "occupation": "State senator; attorney",
               "website": "https://www.keldaroys.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "State senator serving on the Legislature's Joint Finance Committee. Former Assembly representative, born in central Wisconsin.",
               "positions": [
                 {
@@ -457,6 +472,7 @@
               "occupation": "Medical technician",
               "website": "https://andymanske4governor.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -485,7 +501,8 @@
               "residence": "",
               "occupation": "U.S. representative, 7th Congressional District",
               "website": "https://tomtiffany.com",
-              "photo": "",
+              "photo": "tiffany-tom.jpg",
+              "photo_credit": "U.S. House Office of the Clerk",
               "bio": "Represents northern Wisconsin's 7th Congressional District. Former state senator and state representative.",
               "positions": [
                 {
@@ -531,7 +548,8 @@
               "residence": "",
               "occupation": "Wisconsin secretary of state",
               "website": "https://www.sarahforwisconsin.com",
-              "photo": "",
+              "photo": "godlewski-sarah.jpg",
+              "photo_credit": "Lisacheese / CC BY-SA 4.0",
               "bio": "Appointed secretary of state in 2023. Former state treasurer.",
               "positions": [],
               "status": "active",
@@ -550,6 +568,7 @@
               "occupation": "",
               "website": "https://votewillmartin.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -574,6 +593,7 @@
               "occupation": "",
               "website": "",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [],
               "status": "active",
@@ -603,7 +623,8 @@
               "residence": "",
               "occupation": "",
               "website": "https://joshkaul.org",
-              "photo": "",
+              "photo": "kaul-josh.jpg",
+              "photo_credit": "Tony Evers / CC BY 2.0",
               "bio": "",
               "positions": [],
               "status": "active",
@@ -621,7 +642,8 @@
               "residence": "",
               "occupation": "",
               "website": "https://erictoney.com",
-              "photo": "",
+              "photo": "toney-eric.jpg",
+              "photo_credit": "Channel 3000 / News 3 Now / CC BY 3.0",
               "bio": "",
               "positions": [
                 {
@@ -667,7 +689,8 @@
               "residence": "",
               "occupation": "",
               "website": "https://votejocasta.com",
-              "photo": "",
+              "photo": "zamarripa-jocasta.jpg",
+              "photo_credit": "Susan Ruggles / CC BY 2.0",
               "bio": "",
               "positions": [
                 {
@@ -702,6 +725,7 @@
               "occupation": "",
               "website": "https://braydenmyer.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -731,6 +755,7 @@
               "occupation": "",
               "website": "https://jayforwisconsin.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -777,6 +802,7 @@
               "occupation": "",
               "website": "https://www.dylanforwi.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -806,6 +832,7 @@
               "occupation": "",
               "website": "https://yeeforwi.vote",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [
                 {
@@ -840,6 +867,7 @@
               "occupation": "",
               "website": "https://leiberfortreasurer.com",
               "photo": "",
+              "photo_credit": "",
               "bio": "",
               "positions": [],
               "status": "active",

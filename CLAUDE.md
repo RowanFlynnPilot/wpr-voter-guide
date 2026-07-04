@@ -92,6 +92,7 @@ environment detection. Flip it in a commit on election day.
         "occupation": "",
         "website": "",
         "photo": "",             // file name under data/elections/{id}/photos/, "" = none
+        "photo_credit": "",      // attribution line, required for CC-licensed photos
         "bio": "",
         "positions": [],         // [{ "topic", "statement", "source_url" }] — see rule 8
         "status": "active",      // active | suspended
@@ -149,10 +150,14 @@ here. When `results.enabled` is true and the fetch fails, show an error state
    and MUST pass an editorial verification check against WEC filings and
    campaign sites before launch.** Empty fields are intentional — they mean
    "not yet verified," not "unknown forever."
-7. Candidate photos are **candidate-supplied headshots only** (request them
-   in the questionnaire outreach). A candidate without a photo gets a
+7. Candidate photos come from two sources only: **candidate-supplied
+   headshots** (request them in the questionnaire outreach) or **verified
+   freely licensed files** (public domain / Creative Commons) with the
+   license and attribution recorded in `photo_credit` and provenance
+   logged in PHOTO_SOURCING.md. A candidate without a photo gets a
    neutral initials placeholder in the identical frame — never a stock
-   image. See data/elections/{id}/photos/README.md.
+   image, never an unverified identity. See
+   data/elections/{id}/photos/README.md.
 8. `positions` entries are **verbatim quotes from the candidate's own
    published campaign materials**, each with a `source_url` citation —
    never news quotes, social media grabs, voting-record summaries, or

@@ -35,6 +35,9 @@ export default function CandidateCard({ candidate, photoBase, positionsActive })
           </a>
         </p>
       )}
+      {candidate.photo && candidate.photo_credit && (
+        <p className="photo-credit">Photo: {candidate.photo_credit}</p>
+      )}
     </div>
   );
 }

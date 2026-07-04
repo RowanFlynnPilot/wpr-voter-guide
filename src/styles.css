@@ -339,6 +339,12 @@ a {
   font-weight: 600;
 }
 
+.photo-credit {
+  margin: 0.5rem 0 0;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
 /* Stated positions — candidate-published quotes with source links */
 .candidate-positions {
   margin-top: 0.6rem;
