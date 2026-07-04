@@ -46,12 +46,14 @@ export default function NewsletterView({ guide }) {
           <tbody>
             <tr>
               <td style={{ padding: '24px 28px 8px', textAlign: 'center' }}>
-                <img
-                  src={window.location.origin + import.meta.env.BASE_URL + instance.publication.logo}
-                  alt={instance.publication.name}
-                  width="280"
-                  style={{ width: '280px', maxWidth: '100%', height: 'auto', display: 'inline-block' }}
-                />
+                {instance.publication.logo && (
+                  <img
+                    src={window.location.origin + import.meta.env.BASE_URL + instance.publication.logo}
+                    alt={instance.publication.name}
+                    width="280"
+                    style={{ width: '280px', maxWidth: '100%', height: 'auto', display: 'inline-block' }}
+                  />
+                )}
                 <p
                   style={{
                     margin: '8px 0 0',

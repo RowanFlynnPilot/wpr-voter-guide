@@ -19,6 +19,18 @@ export default function App() {
     loadGuide().then(setGuide, setError);
   }, []);
 
+  const routeKey = route.join('/');
+
+  // Hash navigation keeps scroll position; a new view should start at the top.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [routeKey]);
+
+  useEffect(() => {
+    if (!guide) return;
+    document.title = `${viewTitle(route, guide)} — ${guide.instance.publication.name}`;
+  }, [routeKey, guide]);
+
   if (error) {
     return (
       <div className="load-error" role="alert">
@@ -93,6 +105,18 @@ export default function App() {
       </main>
     </div>
   );
+}
+
+function viewTitle(route, guide) {
+  if (route[0] === 'race' && route[1]) {
+    const race = guide.ballot.races.find((r) => r.id === route[1]);
+    if (race) return route[2] === 'questionnaire' ? `${race.office} questionnaire` : race.office;
+  }
+  if (route[0] === 'vote') return 'How to vote';
+  if (route[0] === 'print') return 'Print guide';
+  if (route[0] === 'newsletter') return 'Newsletter block';
+  if (route.length === 0 && guide.election.results.enabled) return 'Primary results';
+  return 'Voter Guide';
 }
 
 function Route({ route, guide }) {

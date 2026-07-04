@@ -1,4 +1,5 @@
 import { LEVEL_ORDER, LEVEL_LABEL, PARTY_NOUN } from '../parties.js';
+import { nextDeadline, formatDate } from '../dates.js';
 import Sponsor from '../components/Sponsor.jsx';
 
 function countLine(race) {
@@ -14,9 +15,19 @@ function countLine(race) {
 export default function RaceBrowser({ guide }) {
   const { races } = guide.ballot;
   const levels = LEVEL_ORDER.filter((level) => races.some((r) => r.level === level));
+  const next = nextDeadline(guide.election.deadlines);
 
   return (
     <div>
+      {next && (
+        <a className="deadline-banner" href="#/vote">
+          <span className="deadline-banner-label">Next deadline</span>
+          <span>
+            {next.label} — {formatDate(next.date)}
+          </span>
+          <span className="deadline-banner-cta">How to vote →</span>
+        </a>
+      )}
       {levels.map((level) => (
         <section key={level} className="level-section">
           <h2 className="level-heading">{LEVEL_LABEL[level]}</h2>

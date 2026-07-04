@@ -9,22 +9,26 @@ export default function Results({ guide }) {
 
   useEffect(() => {
     let alive = true;
-    const load = () =>
-      fetchResults(instance, election).then(
-        (r) => {
-          if (!alive) return;
-          setResults(r);
-          setError(null);
-        },
-        (e) => alive && setError(e)
-      );
+    const load = async () => {
+      try {
+        const r = await fetchResults(instance, election);
+        // Join every race now, so a bad id in a hand-edited results.json
+        // surfaces as the visible error banner — never a crash at render.
+        for (const race of ballot.races) joinRace(race, r);
+        if (!alive) return;
+        setResults(r);
+        setError(null);
+      } catch (e) {
+        if (alive) setError(e);
+      }
+    };
     load();
     const timer = setInterval(load, election.results.poll_seconds * 1000);
     return () => {
       alive = false;
       clearInterval(timer);
     };
-  }, [instance, election]);
+  }, [instance, election, ballot]);
 
   if (error) {
     return (
@@ -107,5 +111,6 @@ function formatUpdated(iso) {
     minute: '2-digit',
     timeZone: 'America/Chicago',
   });
-  return time.replace(' AM', ' a.m.').replace(' PM', ' p.m.');
+  // \s covers the narrow no-break space newer browsers put before AM/PM.
+  return time.replace(/\s*AM$/, ' a.m.').replace(/\s*PM$/, ' p.m.');
 }

@@ -42,6 +42,10 @@ export default function RaceDetail({ guide, raceId }) {
         <section key={primary.party} className="primary-section">
           <h3 className={`primary-heading primary-heading-${primary.party.toLowerCase()}`}>
             {PARTY_LABEL[primary.party]}
+            <span className="primary-count">
+              {primary.candidates.length}{' '}
+              {primary.candidates.length === 1 ? 'candidate' : 'candidates'}
+            </span>
           </h3>
           <div className="candidate-grid">
             {primary.candidates.map((c) => (

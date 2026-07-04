@@ -5,6 +5,7 @@
 :root {
   --brand: #000000;
   --accent: #3a867c;
+  --accent-deep: #2c6a61; /* white-text-on-accent needs this for contrast */
   --paper: #ffffff;
   --ink: #32373c;
   --muted: #666666;
@@ -44,6 +45,12 @@ body {
 a {
   color: var(--brand);
   text-decoration-color: var(--accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .loading {
@@ -146,6 +153,36 @@ a {
 }
 
 /* Race browser */
+.deadline-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent);
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.deadline-banner-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.deadline-banner-cta {
+  margin-left: auto;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .level-section {
   margin-bottom: 2rem;
 }
@@ -176,8 +213,12 @@ a {
   color: var(--ink);
 }
 
+.race-card {
+  transition: background-color 0.15s ease;
+}
+
 .race-card:hover {
-  border-left-width: 8px;
+  background: var(--wash);
 }
 
 .race-card-office {
@@ -261,6 +302,16 @@ a {
   background: var(--rep-wash);
   border-left: 4px solid var(--rep-tint);
   color: var(--rep-tint);
+}
+
+.primary-count {
+  float: right;
+  font-family: var(--font-data);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--muted);
 }
 
 /* Every candidate: identical card, equal space */
@@ -448,7 +499,7 @@ a {
 }
 
 .badge-next {
-  background: var(--accent);
+  background: var(--accent-deep);
   color: #fff;
   margin-left: 0.6rem;
 }
@@ -754,6 +805,30 @@ a {
   height: 100%;
   background: var(--brand);
   min-width: 0;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem 0.9rem 2rem;
+  }
+
+  .masthead-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .masthead-logo {
+    height: 22px;
+  }
+
+  .masthead-title {
+    font-size: 1.8rem;
+  }
+
+  .deadline-banner-cta {
+    margin-left: 0;
+  }
 }
 
 /* Sponsor — landing and how-to-vote only */
