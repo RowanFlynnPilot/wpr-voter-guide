@@ -5,6 +5,7 @@ import { useHashRoute } from './router.js';
 import RaceBrowser from './views/RaceBrowser.jsx';
 import RaceDetail from './views/RaceDetail.jsx';
 import HowToVote from './views/HowToVote.jsx';
+import PrintView from './views/PrintView.jsx';
 
 export default function App() {
   const [guide, setGuide] = useState(null);
@@ -30,6 +31,9 @@ export default function App() {
   }
 
   const { instance, election } = guide;
+
+  // Standalone routes render without the app shell.
+  if (route[0] === 'print') return <PrintView guide={guide} />;
 
   return (
     <div className="app">
