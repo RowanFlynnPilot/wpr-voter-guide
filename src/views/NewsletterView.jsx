@@ -41,23 +41,29 @@ export default function NewsletterView({ guide }) {
           cellSpacing="0"
           border="0"
           align="center"
-          style={{ width: '600px', maxWidth: '100%', backgroundColor: '#f6f2e9', borderCollapse: 'collapse' }}
+          style={{ width: '600px', maxWidth: '100%', backgroundColor: '#ffffff', border: '1px solid #dddddd', borderCollapse: 'collapse' }}
         >
           <tbody>
             <tr>
               <td style={{ padding: '24px 28px 8px', textAlign: 'center' }}>
+                <img
+                  src={window.location.origin + import.meta.env.BASE_URL + instance.publication.logo}
+                  alt={instance.publication.name}
+                  width="280"
+                  style={{ width: '280px', maxWidth: '100%', height: 'auto', display: 'inline-block' }}
+                />
                 <p
                   style={{
-                    margin: 0,
+                    margin: '8px 0 0',
                     fontFamily: sans,
                     fontSize: '12px',
                     fontWeight: 'bold',
                     letterSpacing: '1px',
                     textTransform: 'uppercase',
-                    color: '#3A867C',
+                    color: '#000000',
                   }}
                 >
-                  {instance.publication.name} Voter Guide
+                  Voter Guide
                 </p>
               </td>
             </tr>
@@ -150,7 +156,7 @@ export default function NewsletterView({ guide }) {
                     fontSize: '14px',
                     fontWeight: 'bold',
                     color: '#ffffff',
-                    backgroundColor: '#3A867C',
+                    backgroundColor: '#000000',
                     textDecoration: 'none',
                     padding: '10px 22px',
                   }}

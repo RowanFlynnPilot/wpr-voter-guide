@@ -42,7 +42,24 @@ export default function App() {
   return (
     <div className="app">
       <header className="masthead">
-        <p className="masthead-kicker">{instance.publication.name}</p>
+        <div className="masthead-brand">
+          {instance.publication.icon && (
+            <img
+              className="masthead-icon"
+              src={import.meta.env.BASE_URL + instance.publication.icon}
+              alt=""
+            />
+          )}
+          {instance.publication.logo ? (
+            <img
+              className="masthead-logo"
+              src={import.meta.env.BASE_URL + instance.publication.logo}
+              alt={instance.publication.name}
+            />
+          ) : (
+            <span>{instance.publication.name}</span>
+          )}
+        </div>
         <h1 className="masthead-title">
           <a className="masthead-link" href="#/">
             Voter Guide

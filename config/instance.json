@@ -2,18 +2,21 @@
   "publication": {
     "id": "wpr",
     "name": "Wausau Pilot & Review",
-    "url": "https://wausaupilotandreview.com"
+    "url": "https://wausaupilotandreview.com",
+    "logo": "config/wpr-logo.png",
+    "icon": "config/wpr-icon.png"
   },
   "geographies": ["wi", "wi-cd-07", "wi-marathon"],
   "theme": {
     "colors": {
-      "primary": "#3A867C",
-      "background": "#f6f2e9",
-      "ink": "#1F1F1F"
+      "primary": "#000000",
+      "accent": "#3A867C",
+      "background": "#ffffff",
+      "ink": "#32373c"
     },
     "fonts": {
-      "display": "Fraunces",
-      "body": "Public Sans",
+      "heading": "Oswald",
+      "body": "Merriweather",
       "data": "JetBrains Mono"
     }
   },

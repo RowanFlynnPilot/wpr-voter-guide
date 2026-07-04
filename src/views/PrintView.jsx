@@ -18,6 +18,13 @@ export default function PrintView({ guide }) {
       </button>
 
       <header className="print-head">
+        {instance.publication.logo && (
+          <img
+            className="print-logo"
+            src={import.meta.env.BASE_URL + instance.publication.logo}
+            alt={instance.publication.name}
+          />
+        )}
         <h1 className="print-title">
           {election.name} — {formatDate(election.date)}
         </h1>

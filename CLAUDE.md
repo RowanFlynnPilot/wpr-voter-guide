@@ -42,7 +42,7 @@ identity — no other file repeats candidate names.
 
 ```json
 {
-  "publication": { "id": "wpr", "name": "...", "url": "..." },
+  "publication": { "id": "wpr", "name": "...", "url": "...", "logo": "config/wpr-logo.png", "icon": "config/wpr-icon.png" },
   "geographies": ["wi", "wi-cd-07", "wi-marathon"],
   "theme": { "colors": {...}, "fonts": {...} },
   "sponsor": null,
@@ -162,10 +162,20 @@ here. When `results.enabled` is true and the fetch fails, show an error state
    that absence is information, but remember it can also mean a thin web
    presence rather than a choice.
 
-## Design System (WPR standard)
+## Design System (matched to wausaupilotandreview.com, July 2026)
 
-- Primary teal `#3A867C`, cream background `#f6f2e9`
-- Fraunces (display), Public Sans (body), JetBrains Mono (data/numbers)
+Sourced from the live site (WordPress Newspack, Joseph child theme):
+
+- Black primary `#000000` on white, body ink `#32373c` — the site's own
+  palette. Typewriter teal `#3A867C` (from the round badge logo) is a
+  restrained accent only: next-deadline emphasis, winner checkmarks,
+  link underlines.
+- Oswald (headings/labels, often uppercase — the site's heading font),
+  Merriweather (body — the site's body font), JetBrains Mono (data/numbers,
+  guide-specific).
+- Brand assets in `config/`: `wpr-logo.png` (wordmark) and `wpr-icon.png`
+  (round typewriter badge), wired via `publication.logo` / `publication.icon`
+  in instance.json. A publication without them gets a text masthead.
 - Party accents for primary sections: use restrained, desaturated red/blue
   tints for section headers only — never color entire candidate cards by party
 - Print stylesheet: black on white, no backgrounds, guide URL in footer
