@@ -91,6 +91,7 @@ environment detection. Flip it in a commit on election day.
         "residence": "Bayfield",
         "occupation": "",
         "website": "",
+        "photo": "",             // file name under data/elections/{id}/photos/, "" = none
         "bio": "",
         "status": "active",      // active | suspended
         "status_note": "",       // shown as badge detail when suspended
@@ -147,6 +148,10 @@ here. When `results.enabled` is true and the fetch fails, show an error state
    and MUST pass an editorial verification check against WEC filings and
    campaign sites before launch.** Empty fields are intentional — they mean
    "not yet verified," not "unknown forever."
+7. Candidate photos are **candidate-supplied headshots only** (request them
+   in the questionnaire outreach). A candidate without a photo gets a
+   neutral initials placeholder in the identical frame — never a stock
+   image. See data/elections/{id}/photos/README.md.
 
 ## Design System (WPR standard)
 

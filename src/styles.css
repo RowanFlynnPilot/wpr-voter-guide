@@ -251,6 +251,33 @@ a {
   padding: 0.9rem 1.1rem;
 }
 
+.candidate-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Identical frame for every candidate, photo or not */
+.candidate-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--rule);
+}
+
+.candidate-photo-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .candidate-name {
   margin: 0;
   font-family: var(--font-display);

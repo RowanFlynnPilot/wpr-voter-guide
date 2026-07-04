@@ -3,6 +3,7 @@ import CandidateCard from '../components/CandidateCard.jsx';
 
 export default function RaceDetail({ guide, raceId }) {
   const race = guide.ballot.races.find((r) => r.id === raceId);
+  const photoBase = `${import.meta.env.BASE_URL}data/elections/${guide.instance.election}/photos/`;
 
   if (!race) {
     return (
@@ -32,7 +33,7 @@ export default function RaceDetail({ guide, raceId }) {
           </h3>
           <div className="candidate-grid">
             {primary.candidates.map((c) => (
-              <CandidateCard key={c.id} candidate={c} />
+              <CandidateCard key={c.id} candidate={c} photoBase={photoBase} />
             ))}
           </div>
         </section>
