@@ -517,6 +517,90 @@ a {
   flex-shrink: 0;
 }
 
+/* Results mode */
+.results-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: -0.5rem 0 1.5rem;
+}
+
+.results-race {
+  margin-bottom: 2rem;
+}
+
+.results-office {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.results-primary {
+  margin-bottom: 1rem;
+}
+
+.results-reporting {
+  float: right;
+  font-family: var(--font-data);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.results-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.15rem 1rem;
+  padding: 0.35rem 0;
+}
+
+.results-name {
+  font-weight: 600;
+}
+
+.results-winner {
+  color: var(--teal);
+}
+
+.results-suspended {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.results-numbers {
+  font-family: var(--font-data);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.results-bar-track {
+  grid-column: 1 / -1;
+  display: block;
+  height: 8px;
+  background: var(--rule);
+}
+
+.results-bar {
+  display: block;
+  height: 100%;
+  background: var(--teal);
+  min-width: 0;
+}
+
+.results-bar-dem {
+  background: var(--dem-tint);
+}
+
+.results-bar-rep {
+  background: var(--rep-tint);
+}
+
 /* Sponsor — landing and how-to-vote only */
 .sponsor {
   margin-top: 2.5rem;

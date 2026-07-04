@@ -7,6 +7,7 @@ import RaceDetail from './views/RaceDetail.jsx';
 import HowToVote from './views/HowToVote.jsx';
 import PrintView from './views/PrintView.jsx';
 import NewsletterView from './views/NewsletterView.jsx';
+import Results from './views/Results.jsx';
 
 export default function App() {
   const [guide, setGuide] = useState(null);
@@ -50,9 +51,20 @@ export default function App() {
           {election.name} — {formatDate(election.date)}
         </p>
         <nav className="nav">
-          <a className={route.length === 0 ? 'nav-active' : ''} href="#/">
-            Races
-          </a>
+          {election.results.enabled ? (
+            <>
+              <a className={route.length === 0 ? 'nav-active' : ''} href="#/">
+                Results
+              </a>
+              <a className={route[0] === 'races' ? 'nav-active' : ''} href="#/races">
+                Races
+              </a>
+            </>
+          ) : (
+            <a className={route.length === 0 ? 'nav-active' : ''} href="#/">
+              Races
+            </a>
+          )}
           <a className={route[0] === 'vote' ? 'nav-active' : ''} href="#/vote">
             How to vote
           </a>
@@ -66,7 +78,11 @@ export default function App() {
 }
 
 function Route({ route, guide }) {
-  if (route.length === 0) return <RaceBrowser guide={guide} />;
+  // Results mode: when enabled the guide's front page becomes the results
+  // board. Toggled only by the results.enabled flag in election.json.
+  const resultsMode = guide.election.results.enabled;
+  if (route.length === 0) return resultsMode ? <Results guide={guide} /> : <RaceBrowser guide={guide} />;
+  if (route[0] === 'races') return <RaceBrowser guide={guide} />;
   if (route[0] === 'race' && route[1]) return <RaceDetail guide={guide} raceId={route[1]} />;
   if (route[0] === 'vote') return <HowToVote guide={guide} />;
   return (
