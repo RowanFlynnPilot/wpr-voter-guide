@@ -91,6 +91,14 @@ function validateBallot(ballot, instance) {
     if (!Array.isArray(race.primaries) || race.primaries.length === 0) {
       fail(`${where} has no primaries`);
     }
+    if (!Array.isArray(race.coverage)) {
+      fail(`${where} coverage must be an array`);
+    }
+    for (const item of race.coverage) {
+      if (!item.headline || !item.outlet || !item.date || !item.url) {
+        fail(`${where} has a coverage item missing headline, outlet, date, or url`);
+      }
+    }
     for (const primary of race.primaries) {
       if (primary.party !== 'DEM' && primary.party !== 'REP') {
         fail(`${where} has an invalid party "${primary.party}"`);
@@ -141,6 +149,13 @@ function sortCandidates(ballot) {
   }
 }
 
+// Coverage renders newest first everywhere.
+function sortCoverage(ballot) {
+  for (const race of ballot.races) {
+    race.coverage.sort((a, b) => b.date.localeCompare(a.date));
+  }
+}
+
 export async function loadGuide() {
   const instance = await fetchJson('config/instance.json');
   validateInstance(instance);
@@ -165,5 +180,6 @@ export async function loadGuide() {
   }
 
   sortCandidates(ballot);
+  sortCoverage(ballot);
   return { instance, election, ballot: { ...ballot, races } };
 }

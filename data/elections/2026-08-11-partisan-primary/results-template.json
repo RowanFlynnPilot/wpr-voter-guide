@@ -9,20 +9,52 @@
           "party": "DEM",
           "reporting": "",
           "candidates": [
-            { "id": "armstrong-chris", "votes": 0, "winner": false },
-            { "id": "clark-fred", "votes": 0, "winner": false },
-            { "id": "murray-ginger", "votes": 0, "winner": false }
+            {
+              "id": "armstrong-chris",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "clark-fred",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "murray-ginger",
+              "votes": 0,
+              "winner": false
+            }
           ]
         },
         {
           "party": "REP",
           "reporting": "",
           "candidates": [
-            { "id": "alfonso-michael", "votes": 0, "winner": false },
-            { "id": "ebben-jessi", "votes": 0, "winner": false },
-            { "id": "hermening-kevin", "votes": 0, "winner": false },
-            { "id": "threlfall-baum-niina", "votes": 0, "winner": false },
-            { "id": "wassgren-paul", "votes": 0, "winner": false }
+            {
+              "id": "alfonso-michael",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "ebben-jessi",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "hermening-kevin",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "threlfall-baum-niina",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "wassgren-paul",
+              "votes": 0,
+              "winner": false
+            }
           ]
         }
       ]
@@ -34,21 +66,57 @@
           "party": "DEM",
           "reporting": "",
           "candidates": [
-            { "id": "barnes-mandela", "votes": 0, "winner": false },
-            { "id": "brennan-joel", "votes": 0, "winner": false },
-            { "id": "crowley-david", "votes": 0, "winner": false },
-            { "id": "hong-francesca", "votes": 0, "winner": false },
-            { "id": "hughes-missy", "votes": 0, "winner": false },
-            { "id": "rodriguez-sara", "votes": 0, "winner": false },
-            { "id": "roys-kelda", "votes": 0, "winner": false }
+            {
+              "id": "barnes-mandela",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "brennan-joel",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "crowley-david",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "hong-francesca",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "hughes-missy",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "rodriguez-sara",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "roys-kelda",
+              "votes": 0,
+              "winner": false
+            }
           ]
         },
         {
           "party": "REP",
           "reporting": "",
           "candidates": [
-            { "id": "manske-andy", "votes": 0, "winner": false },
-            { "id": "tiffany-tom", "votes": 0, "winner": false }
+            {
+              "id": "manske-andy",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "tiffany-tom",
+              "votes": 0,
+              "winner": false
+            }
           ]
         }
       ]
@@ -60,15 +128,27 @@
           "party": "DEM",
           "reporting": "",
           "candidates": [
-            { "id": "godlewski-sarah", "votes": 0, "winner": false }
+            {
+              "id": "godlewski-sarah",
+              "votes": 0,
+              "winner": false
+            }
           ]
         },
         {
           "party": "REP",
           "reporting": "",
           "candidates": [
-            { "id": "martin-will", "votes": 0, "winner": false },
-            { "id": "sablich-cyril", "votes": 0, "winner": false }
+            {
+              "id": "martin-will",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "varnam-david",
+              "votes": 0,
+              "winner": false
+            }
           ]
         }
       ]
@@ -80,14 +160,22 @@
           "party": "DEM",
           "reporting": "",
           "candidates": [
-            { "id": "kaul-josh", "votes": 0, "winner": false }
+            {
+              "id": "kaul-josh",
+              "votes": 0,
+              "winner": false
+            }
           ]
         },
         {
           "party": "REP",
           "reporting": "",
           "candidates": [
-            { "id": "toney-eric", "votes": 0, "winner": false }
+            {
+              "id": "toney-eric",
+              "votes": 0,
+              "winner": false
+            }
           ]
         }
       ]
@@ -99,15 +187,27 @@
           "party": "DEM",
           "reporting": "",
           "candidates": [
-            { "id": "zamarripa-jocasta", "votes": 0, "winner": false }
+            {
+              "id": "zamarripa-jocasta",
+              "votes": 0,
+              "winner": false
+            }
           ]
         },
         {
           "party": "REP",
           "reporting": "",
           "candidates": [
-            { "id": "myer-brayden", "votes": 0, "winner": false },
-            { "id": "schroeder-jay", "votes": 0, "winner": false }
+            {
+              "id": "myer-brayden",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "schroeder-jay",
+              "votes": 0,
+              "winner": false
+            }
           ]
         }
       ]
@@ -119,15 +219,27 @@
           "party": "DEM",
           "reporting": "",
           "candidates": [
-            { "id": "helmenstine-dylan", "votes": 0, "winner": false },
-            { "id": "xiong-yee-leng", "votes": 0, "winner": false }
+            {
+              "id": "helmenstine-dylan",
+              "votes": 0,
+              "winner": false
+            },
+            {
+              "id": "xiong-yee-leng",
+              "votes": 0,
+              "winner": false
+            }
           ]
         },
         {
           "party": "REP",
           "reporting": "",
           "candidates": [
-            { "id": "leiber-john", "votes": 0, "winner": false }
+            {
+              "id": "leiber-john",
+              "votes": 0,
+              "winner": false
+            }
           ]
         }
       ]

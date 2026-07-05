@@ -1,5 +1,6 @@
 import { PARTY_LABEL } from '../parties.js';
 import CandidateCard from '../components/CandidateCard.jsx';
+import CoverageList from '../components/CoverageList.jsx';
 
 export default function RaceDetail({ guide, raceId }) {
   const race = guide.ballot.races.find((r) => r.id === raceId);
@@ -59,6 +60,13 @@ export default function RaceDetail({ guide, raceId }) {
           </div>
         </section>
       ))}
+
+      {race.coverage.length > 0 && (
+        <section className="race-coverage">
+          <h3 className="section-heading">Related coverage</h3>
+          <CoverageList items={race.coverage} />
+        </section>
+      )}
     </article>
   );
 }

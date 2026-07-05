@@ -10,6 +10,50 @@
       ],
       "open_seat": true,
       "context": "EDITORIAL: Rep. Tom Tiffany is leaving this seat to run for governor, giving northern and central Wisconsin its first open congressional race since 2020. Five Republicans and three Democrats are competing, including a Wausau candidate on the Republican side.",
+      "coverage": [
+        {
+          "headline": "7th Congressional District candidates to participate in July debates",
+          "outlet": "Wausau Pilot & Review",
+          "date": "2026-06-23",
+          "url": "https://wausaupilotandreview.com/2026/06/23/7th-congressional-district-candidates-to-participate-in-july-debates/"
+        },
+        {
+          "headline": "Elections Commission grants ballot access to 7th CD candidates",
+          "outlet": "Wausau Pilot & Review",
+          "date": "2026-06-11",
+          "url": "https://wausaupilotandreview.com/2026/06/11/elections-commission-grants-ballot-access-to-7th-cd-candidates/"
+        },
+        {
+          "headline": "7th District Republican challenges rivals' nominating papers",
+          "outlet": "Wausau Pilot & Review",
+          "date": "2026-06-09",
+          "url": "https://wausaupilotandreview.com/2026/06/09/7th-district-republican-challenges-rivals-nominating-papers/"
+        },
+        {
+          "headline": "Duffy son-in-law faces criticism for role in road trip reality show",
+          "outlet": "Wausau Pilot & Review",
+          "date": "2026-05-15",
+          "url": "https://wausaupilotandreview.com/2026/05/15/duffy-son-in-law-faces-criticism-for-role-in-road-trip-reality-show/"
+        },
+        {
+          "headline": "Paul Wassgren drops out of race for 7th Congressional District",
+          "outlet": "Wisconsin Public Radio",
+          "date": "2026-04-21",
+          "url": "https://www.wpr.org/news/paul-wassgren-drops-out-of-race-for-7th-congressional-district"
+        },
+        {
+          "headline": "Half the candidates for Wisconsin House seat recently lived outside district or state",
+          "outlet": "Wausau Pilot & Review",
+          "date": "2026-02-24",
+          "url": "https://wausaupilotandreview.com/2026/02/24/half-the-candidates-for-wisconsin-house-seat-recently-lived-outside-district-or-state/"
+        },
+        {
+          "headline": "Meet the candidates in Wisconsin's 7th Congressional District Democratic primary",
+          "outlet": "UpNorthNews",
+          "date": "2026-02-06",
+          "url": "https://upnorthnewswi.com/2026/02/06/meet-democratic-candidates-7th-congressional-district/"
+        }
+      ],
       "primaries": [
         {
           "party": "DEM",
@@ -239,8 +283,8 @@
                   "source_url": "https://paulwassgren.com/#issues"
                 }
               ],
-              "status": "active",
-              "status_note": "",
+              "status": "suspended",
+              "status_note": "Suspended his campaign on April 21, 2026, according to Wisconsin Public Radio. His name remains on the primary ballot.",
               "questionnaire": null
             }
           ]
@@ -256,6 +300,38 @@
       ],
       "open_seat": true,
       "context": "EDITORIAL: Gov. Tony Evers is not seeking a third term, making this Wisconsin's first open race for governor since 2010. Seven Democrats and two Republicans are on the primary ballot.",
+      "coverage": [
+        {
+          "headline": "Hughes suspends campaign for Wisconsin governor, endorses Rodriguez",
+          "outlet": "Wausau Pilot & Review",
+          "date": "2026-06-22",
+          "url": "https://wausaupilotandreview.com/2026/06/22/hughes-suspends-campaign-for-wisconsin-governor-endorses-rodriguez/"
+        },
+        {
+          "headline": "Sara Rodriguez leads field for governor in Wisconsin Dems' straw poll",
+          "outlet": "Wausau Pilot & Review",
+          "date": "2026-06-14",
+          "url": "https://wausaupilotandreview.com/2026/06/14/sara-rodriguez-leads-field-for-governor-in-wisconsin-dems-straw-poll/"
+        },
+        {
+          "headline": "Where the race for governor stands as August primary approaches",
+          "outlet": "Spectrum News 1",
+          "date": "2026-06-23",
+          "url": "https://spectrumnews1.com/wi/milwaukee/news/2026/06/23/democrats-republicans-election-governor"
+        },
+        {
+          "headline": "Democrats vying for Wisconsin governor sound off on data centers, climate accountability during forum",
+          "outlet": "Wisconsin Public Radio",
+          "date": "2026-04-14",
+          "url": "https://www.wpr.org/news/democrats-wisconsin-governor-primary-2026-data-centers-climate-accountability"
+        },
+        {
+          "headline": "Wisconsin's wide-open 2026 Democratic primary for governor",
+          "outlet": "PBS Wisconsin",
+          "date": "2026-04-08",
+          "url": "https://pbswisconsin.org/news-item/wisconsins-wide-open-2026-democratic-primary-for-governor/"
+        }
+      ],
       "primaries": [
         {
           "party": "DEM",
@@ -538,6 +614,20 @@
       ],
       "open_seat": true,
       "context": "EDITORIAL: Lt. Gov. Sara Rodriguez is running for governor rather than seeking re-election. Primary winners will join their party's gubernatorial nominee on the November ticket.",
+      "coverage": [
+        {
+          "headline": "Wisconsin Secretary of State Sarah Godlewski enters the 2026 race for lieutenant governor",
+          "outlet": "PBS Wisconsin",
+          "date": "2025-08-20",
+          "url": "https://pbswisconsin.org/news-item/wisconsin-secretary-of-state-sarah-godlewski-enters-the-2026-race-for-lieutenant-governor/"
+        },
+        {
+          "headline": "Small business owner Will Martin launches campaign for lieutenant governor",
+          "outlet": "Spectrum News 1",
+          "date": "2025-10-20",
+          "url": "https://spectrumnews1.com/wi/milwaukee/news/2025/10/20/will-martin--campaign--lieutenant-governor-race--2026--announcement"
+        }
+      ],
       "primaries": [
         {
           "party": "DEM",
@@ -587,8 +677,8 @@
               "questionnaire": null
             },
             {
-              "id": "sablich-cyril",
-              "name": "Cyril Sablich",
+              "id": "varnam-david",
+              "name": "David Varnam",
               "residence": "",
               "occupation": "",
               "website": "",
@@ -613,6 +703,32 @@
       ],
       "open_seat": false,
       "context": "EDITORIAL DRAFT (unverified, from WEC June 9 ballot access report): Attorney General Josh Kaul is seeking a third term and is unopposed in the Democratic primary. Eric Toney is unopposed in the Republican primary.",
+      "coverage": [
+        {
+          "headline": "Kaul calls Toney a 'yes man' for Trump as he prepares for rematch",
+          "outlet": "WisPolitics",
+          "date": "2026-06-13",
+          "url": "https://www.wispolitics.com/2026/kaul-calls-toney-a-yes-man-for-trump-as-he-prepares-for-rematch/"
+        },
+        {
+          "headline": "Republican Eric Toney is running again for Wisconsin attorney general",
+          "outlet": "Wisconsin Public Radio",
+          "date": "2025-10-21",
+          "url": "https://www.wpr.org/news/republican-eric-toney-running-again-wisconsin-attorney-general-2026"
+        },
+        {
+          "headline": "Kaul to run for a third term as Wisconsin Attorney General in 2026 election",
+          "outlet": "PBS Wisconsin",
+          "date": "2025-10-07",
+          "url": "https://pbswisconsin.org/news-item/kaul-to-run-for-a-third-term-as-wisconsin-attorney-general-in-2026-election/"
+        },
+        {
+          "headline": "Toney enters race for Wisconsin attorney general, touting 'public safety over politics'",
+          "outlet": "Spectrum News 1",
+          "date": "2025-10-21",
+          "url": "https://spectrumnews1.com/wi/milwaukee/news/2025/10/21/district-attorney--eric-toney--attorney-general--wisconsin--campaign--2026"
+        }
+      ],
       "primaries": [
         {
           "party": "DEM",
@@ -679,6 +795,20 @@
       ],
       "open_seat": true,
       "context": "EDITORIAL DRAFT (unverified, from WEC June 9 ballot access report): Secretary of State Sarah Godlewski is not seeking re-election; she filed a notification of noncandidacy and is running for lieutenant governor. IMPORTANT BEFORE LAUNCH: three additional candidacies (Eileen Newcomer, DEM; Nate Pollnow, REP; Cindy Werner, REP) were marked as challenged, not approved, in the June 9 report and are NOT listed here — verify their final ballot status against WEC certification before this race publishes.",
+      "coverage": [
+        {
+          "headline": "Milwaukee Alderperson Running For Secretary of State",
+          "outlet": "Urban Milwaukee",
+          "date": "2025-09-04",
+          "url": "https://urbanmilwaukee.com/2025/09/04/milwaukee-alderperson-running-for-secretary-of-state/"
+        },
+        {
+          "headline": "Ald. JoCasta Zamarripa announces campaign for Wisconsin Secretary of State",
+          "outlet": "CBS 58",
+          "date": "2025-09-04",
+          "url": "https://www.cbs58.com/news/ald-jocasta-zamarripa-announces-campaign-for-wisconsin-secretary-of-state"
+        }
+      ],
       "primaries": [
         {
           "party": "DEM",
@@ -791,6 +921,26 @@
       ],
       "open_seat": false,
       "context": "EDITORIAL DRAFT (unverified, from WEC June 9 ballot access report): State Treasurer John S. Leiber is unopposed in the Republican primary. Two Democrats, Dylan Helmenstine and Yee Leng Xiong, are competing for their party's nomination.",
+      "coverage": [
+        {
+          "headline": "Two Democrats seek to challenge Treasurer John Leiber, Wisconsin's only GOP state office holder",
+          "outlet": "Wisconsin Examiner",
+          "date": "2026-06-11",
+          "url": "https://wisconsinexaminer.com/2026/06/11/two-democrats-seek-to-challenge-treasurer-john-leiber-wisconsins-only-gop-state-office-holder/"
+        },
+        {
+          "headline": "Wausau area man launches run for state treasurer",
+          "outlet": "WSAW",
+          "date": "2026-01-07",
+          "url": "https://www.wsaw.com/2026/01/07/wausau-area-man-launches-run-state-treasurer/"
+        },
+        {
+          "headline": "Dane County native announced bid for Wisconsin State Treasurer",
+          "outlet": "WEAU",
+          "date": "2025-11-16",
+          "url": "https://www.weau.com/2025/11/17/dane-county-native-announced-bid-wisconsin-state-treasurer/"
+        }
+      ],
       "primaries": [
         {
           "party": "DEM",

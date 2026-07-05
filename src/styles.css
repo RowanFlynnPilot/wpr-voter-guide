@@ -729,6 +729,52 @@ button:focus-visible {
   color: var(--muted);
 }
 
+/* Coverage (race detail + News view) */
+.race-coverage {
+  margin-top: 0.5rem;
+}
+
+.coverage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coverage-item {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.coverage-item a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.coverage-item a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+
+.coverage-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.news-race {
+  margin-bottom: 1.5rem;
+}
+
+.news-race-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-race-link:hover {
+  text-decoration: underline;
+}
+
 /* Results mode */
 .results-note {
   font-size: 0.9rem;

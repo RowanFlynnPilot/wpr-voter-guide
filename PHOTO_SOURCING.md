@@ -68,7 +68,11 @@ Commons file with caveats noted below.
 |---|---|---|---|---|---|
 | Sarah Godlewski (D) | [Official SOS page](https://sos.wi.gov/Pages/About.aspx) | State work, © State of Wisconsin — ask SOS office | Courtesy credit | High | |
 | Will Martin (R) | [votewillmartin.com](https://votewillmartin.com/) headshots | Copyrighted — ask campaign | Campaign courtesy | High | |
-| Cyril Sablich (R) | **None found** — no site, no Commons, no confirmed social profile | — | — | Low | |
+| David Varnam (R) | **Not yet researched** — added July 4 after the WEC roster correction (see flags) | — | — | — | |
+
+Removed July 4: Cyril Sablich — the WEC June 9 report shows his ballot
+access was DENIED; he was in the seed in error and is no longer in
+ballot.json. (Explains why no photo or website was ever findable.)
 
 ## Attorney General
 
@@ -122,15 +126,21 @@ Commons file with caveats noted below.
   that the uploader's claim is wrong; both currently look sound (used as
   Wikipedia infobox images, descriptions match).
 
-## ⚠ URGENT editorial flags surfaced by this research (not photo issues)
+## ⚠ Editorial flags (updated July 4)
 
-1. **Paul Wassgren may have suspended his campaign on April 21, 2026**
-   ([WisPolitics](https://www.wispolitics.com/2026/wassgren-campaign-suspends-congressional-campaign-to-assist-wisconsin-republicans-and-faith-community/)).
-   ballot.json currently lists him as `active` with no status note. His
-   own site shows no suspension banner and Ballotpedia still lists him,
-   so the reports conflict — **verify before launch** and, if confirmed,
-   set `status: suspended` + `status_note` like Hughes. Also reconcile
-   with WEC certification (he was certified in June, after that date).
+1. ~~Wassgren suspension~~ **RESOLVED as draft**: confirmed by straight
+   news reporting ([WPR, April 21](https://www.wpr.org/news/paul-wassgren-drops-out-of-race-for-7th-congressional-district),
+   corroborated by WSAW). ballot.json now marks him `suspended` with a
+   status note. He was still certified for the August ballot in June.
+   Editorial verification still applies, as with all drafted data.
 2. **Ballot name spelling**: Niina Threlfall-Baum campaigns as "Niina
    Baum" — check the WEC certified name and make ballot.json match the
    ballot.
+3. **Lt. Gov REP roster corrected July 4 from the WEC June 9 report**:
+   David Varnam (approved) was missing from the seed; Cyril Sablich
+   (denied) was listed in error. ballot.json and results-template.json
+   now say Martin + Varnam. Varnam has had NO research yet — website,
+   positions, photo, residence all need the same drafting/verification
+   as everyone else.
+4. Standing: the three challenged SoS candidacies (Newcomer, Pollnow,
+   Werner) still need their final WEC status confirmed before launch.

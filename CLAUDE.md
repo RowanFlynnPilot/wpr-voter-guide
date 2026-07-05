@@ -83,6 +83,7 @@ environment detection. Flip it in a commit on election day.
     "geography": ["wi-cd-07"],
     "open_seat": true,
     "context": "One editorial paragraph. Editorial-owned.",
+    "coverage": [],              // [{ "headline", "outlet", "date", "url" }] — see rule 9
     "primaries": [{
       "party": "DEM",            // DEM | REP
       "candidates": [{
@@ -166,6 +167,10 @@ here. When `results.enabled` is true and the fetch fails, show an error state
    any show "No stated positions available" — like "Did not respond,"
    that absence is information, but remember it can also mean a thin web
    presence rather than a choice.
+9. Race `coverage` is **hand-curated by editorial** — headline (verbatim),
+   outlet, date, URL. Nothing is pulled automatically; which outlets
+   appear is purely an editorial selection made in ballot.json. Headlines
+   render as written by the originating outlet; don't editorialize them.
 
 ## Design System (matched to wausaupilotandreview.com, July 2026)
 

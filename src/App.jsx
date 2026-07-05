@@ -9,6 +9,7 @@ import PrintView from './views/PrintView.jsx';
 import NewsletterView from './views/NewsletterView.jsx';
 import Results from './views/Results.jsx';
 import Questionnaire from './views/Questionnaire.jsx';
+import News from './views/News.jsx';
 
 export default function App() {
   const [guide, setGuide] = useState(null);
@@ -98,6 +99,11 @@ export default function App() {
           <a className={route[0] === 'vote' ? 'nav-active' : ''} href="#/vote">
             How to vote
           </a>
+          {guide.ballot.races.some((r) => r.coverage.length > 0) && (
+            <a className={route[0] === 'news' ? 'nav-active' : ''} href="#/news">
+              News
+            </a>
+          )}
         </nav>
       </header>
       <main>
@@ -113,6 +119,7 @@ function viewTitle(route, guide) {
     if (race) return route[2] === 'questionnaire' ? `${race.office} questionnaire` : race.office;
   }
   if (route[0] === 'vote') return 'How to vote';
+  if (route[0] === 'news') return 'Race coverage';
   if (route[0] === 'print') return 'Print guide';
   if (route[0] === 'newsletter') return 'Newsletter block';
   if (route.length === 0 && guide.election.results.enabled) return 'Primary results';
@@ -130,6 +137,7 @@ function Route({ route, guide }) {
   }
   if (route[0] === 'race' && route[1]) return <RaceDetail guide={guide} raceId={route[1]} />;
   if (route[0] === 'vote') return <HowToVote guide={guide} />;
+  if (route[0] === 'news') return <News guide={guide} />;
   return (
     <p>
       Page not found. <a href="#/">Back to the guide</a>
