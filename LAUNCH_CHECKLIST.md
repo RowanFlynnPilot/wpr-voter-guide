@@ -1,0 +1,84 @@
+# Launch Checklist — Wisconsin Partisan Primary, August 11, 2026
+
+Every human task standing between the current build and launch, in one
+place. The code is done; everything below is verification and sign-off.
+Target: live before **July 22** (online registration deadline). Sources
+of record: WEC filings and candidates' own materials.
+
+## 1. Hard deadline first
+
+- [ ] **Questionnaire go/no-go (Shereen), questions to candidates by ~July 8**
+      — two-week response window before launch. If GO, request a headshot
+      in the same email (see §5). If NO-GO, `questions` stays `[]` and the
+      comparison view never appears; the stated-positions blocks carry the
+      "own words" load instead.
+
+## 2. Roster verification (against WEC certification)
+
+- [ ] **Secretary of State — three challenged candidacies** (Eileen
+      Newcomer DEM, Nate Pollnow REP, Cindy Werner REP): marked
+      "Challenged" in the WEC June 9 ballot access report and NOT in
+      ballot.json. Confirm their final status; add any who were certified.
+- [ ] **Lt. Governor — David Varnam**: added July 4 from the WEC report
+      (Sablich was denied access and removed). Varnam has had NO
+      research: residence, website, positions, photo all empty.
+- [ ] **Niina Threlfall-Baum ballot name**: campaigns as "Niina Baum" —
+      match ballot.json `name` to the WEC certified form.
+- [ ] **Suspension statuses**: Hughes (June 22) and Wassgren (April 21,
+      per WPR/WSAW — drafted July 4) both marked suspended; confirm both
+      remain on the printed ballot.
+
+## 3. Candidate data (rule 6 verification pass)
+
+- [ ] Every seeded `bio` / `occupation` / `residence` checked against WEC
+      filings and campaign sites (seeds came from news coverage). Note:
+      Fred Clark seeded as Bayfield; campaign mail goes to Washburn.
+- [ ] 27 drafted `website` URLs — click each; they were verified live
+      July 4 but campaigns move.
+- [ ] **66 drafted `positions` quotes** — verify each against the live
+      page (source_url on every entry). Specific flags: Murray's items
+      came from a press-release feed (likely re-select); Myer's "Vision"
+      section has no real topic headings; Hughes has one minimal entry;
+      Schroeder's quote says "the corrupt WEC" (framing call); Kaul,
+      Godlewski, Leiber, Hermening have no platform content — decide if
+      "No stated positions available" is fair per race, or blank that
+      race's positions to deactivate the block.
+- [ ] Race `context` paragraphs still carry "EDITORIAL:" draft prefixes —
+      rewrite as reader-facing copy.
+
+## 4. Coverage links (drafted July 4)
+
+- [ ] Click all 23 — verified loading July 4, headlines verbatim.
+- [ ] The two WP&R governor items may be States Newsroom republications —
+      confirm attribution/URL choice.
+- [ ] AG has two same-day announcement stories — trim if desired.
+
+## 5. Photos
+
+- [ ] Spot-check the 9 integrated freely licensed photos (identity +
+      license per PHOTO_SOURCING.md); Zamarripa's is ~8 years old,
+      Toney's is a video still, Godlewski's is low-res — all replaceable
+      via permission emails.
+- [ ] Batch emails for the other 19: WPR archive first (Hermening,
+      Xiong), PBS Wisconsin (Manske, Myer, Schroeder), state offices
+      (Godlewski, Leiber, Roys, Crowley, Kaul), campaigns for the rest
+      (fold into questionnaire outreach).
+
+## 6. Logistics + product
+
+- [ ] Verify all MyVote deep links in election.json resolve (entered from
+      memory per BUILD_PLAN).
+- [ ] Sponsor decision: `sponsor` is null; if one signs, add the block —
+      branding renders on landing and how-to-vote only, never race pages.
+- [ ] Embed on a draft WordPress page with the EMBED.md snippet (includes
+      the scroll-to-top listener); hand-check on a real phone.
+- [ ] Confirm the guide URL in /print footer and /newsletter CTA points
+      where you want readers to land (currently the Pages URL).
+
+## 7. Election night (see RESULTS_RUNBOOK.md)
+
+- [ ] Aug 10 dry run with fake numbers, then reset to the zeroed template.
+- [ ] Aug 11 ~7:30 p.m.: copy template → results.json, flip
+      `results.enabled`, push. Watch for the red X in Actions after
+      every push — the validator catches bad ids and malformed JSON
+      within a minute.

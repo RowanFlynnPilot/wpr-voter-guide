@@ -27,7 +27,7 @@ export async function fetchResults(instance, election) {
   return results;
 }
 
-function validateResults(results) {
+export function validateResults(results) {
   if (!results.updated) throw new Error('results.json is missing the updated timestamp');
   if (!Array.isArray(results.races)) throw new Error('results.json races must be an array');
   for (const race of results.races) {

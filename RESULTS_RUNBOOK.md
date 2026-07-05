@@ -38,6 +38,10 @@ Everything happens in `data/elections/2026-08-11-partisan-primary/`.
    you'll know within 60 seconds if you make a typo. Fix and re-push.
 4. Commit, push. The live site polls the raw GitHub URL for results.json
    every 60 seconds; no rebuild or deploy is involved.
+5. **Watch for the red X.** Every push runs the data validator in GitHub
+   Actions (same checks the app runs). A red X on your commit within a
+   minute means the file is broken — the exact error (bad id, malformed
+   JSON) is in the Actions log. Fix and push again. Green check = clean.
 
 ### The winner rule
 
