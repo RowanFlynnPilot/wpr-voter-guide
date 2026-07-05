@@ -19,8 +19,18 @@ Paste this into a Custom HTML block on the WordPress page:
 <script>
   window.addEventListener('message', function (event) {
     if (event.origin !== 'https://rowanflynnpilot.github.io') return;
-    if (!event.data || event.data.type !== 'wpr-guide-height') return;
-    document.getElementById('wpr-voter-guide').height = event.data.height;
+    if (!event.data) return;
+    var frame = document.getElementById('wpr-voter-guide');
+    if (event.data.type === 'wpr-guide-height') {
+      frame.height = event.data.height;
+    }
+    if (event.data.type === 'wpr-guide-nav') {
+      // Reader navigated inside the guide; if they were scrolled deep
+      // into the previous view, bring them back to the guide's top.
+      if (frame.getBoundingClientRect().top < 0) {
+        frame.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   });
 </script>
 ```
@@ -31,8 +41,14 @@ Paste this into a Custom HTML block on the WordPress page:
   ResizeObserver and posts `{ type: 'wpr-guide-height', height }` to the
   parent whenever it changes — on load, on every view change, and when
   results rows grow on election night.
+- On every in-guide navigation it also posts `{ type: 'wpr-guide-nav' }`.
+  Because the iframe is sized to its content, a reader who taps a race at
+  the bottom of a long list would otherwise stay scrolled deep into the
+  page on the new view; the parent script scrolls the guide's top back
+  into view only when needed.
 - The WordPress script checks the message origin against the GitHub Pages
-  host, then sets the iframe height. Nothing else is accepted or executed.
+  host, then sets the iframe height or scrolls. Nothing else is accepted
+  or executed.
 - The `height="900"` attribute is only the pre-JavaScript fallback size.
 
 ## Notes
