@@ -137,7 +137,8 @@ button:focus-visible {
   font-weight: 600;
   text-decoration: none;
   color: var(--ink);
-  padding-bottom: 2px;
+  /* generous vertical padding = thumb-sized tap targets on mobile */
+  padding: 0.4rem 0 calc(0.4rem - 2px);
   border-bottom: 2px solid transparent;
 }
 
