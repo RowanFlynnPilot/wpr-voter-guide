@@ -52,6 +52,9 @@ export default function Results({ guide }) {
   }
 
   const races = LEVEL_ORDER.flatMap((level) => ballot.races.filter((r) => r.level === level));
+  // Numbers are hand-committed; if the last update is aging, say so —
+  // silent staleness is the one failure mode this page must never have.
+  const staleMinutes = Math.floor((Date.now() - new Date(results.updated)) / 60000);
 
   return (
     <div>
@@ -59,6 +62,12 @@ export default function Results({ guide }) {
       <p className="results-note">
         {results.note} Updated {formatUpdated(results.updated)}
       </p>
+      {staleMinutes > 45 && (
+        <p className="results-stale" role="status">
+          These numbers were last updated {staleMinutes} minutes ago and may be
+          behind the current count.
+        </p>
+      )}
 
       {races.map((race) => (
         <section key={race.id} className="results-race">
@@ -67,9 +76,10 @@ export default function Results({ guide }) {
             <div key={primary.party} className="results-primary">
               <h4 className={`primary-heading primary-heading-${primary.party.toLowerCase()}`}>
                 {PARTY_LABEL[primary.party]}
-                {primary.reporting && (
-                  <span className="results-reporting">{primary.reporting}</span>
-                )}
+                <span className="results-reporting">
+                  {primary.reporting && `${primary.reporting} · `}
+                  {primary.total.toLocaleString('en-US')} votes counted
+                </span>
               </h4>
               <ol className="results-list">
                 {primary.candidates.map((c) => (

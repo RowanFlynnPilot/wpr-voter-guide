@@ -113,6 +113,11 @@ export default function App() {
         </nav>
       </header>
       <main>
+        {election.results.enabled && route.length > 0 && (
+          <a className="results-strip" href="#/">
+            Live results are coming in →
+          </a>
+        )}
         <Route route={route} guide={guide} />
       </main>
     </div>
