@@ -208,6 +208,11 @@ Sourced from the live site (WordPress Newspack, Joseph child theme):
    rendered HTML into MailerLite each send.
 7. **Results** (when enabled) — vote bars per primary, reporting status,
    "last updated" timestamp, unofficial-results disclaimer.
+8. **My ballot** — reader-selected candidate checklist, printable, with a
+   one-party-primary warning when picks span parties. Stored ONLY in the
+   reader's browser (localStorage) — no accounts, no tracking, nothing
+   leaves the device. A pick is the reader's note to self, never rendered
+   as social proof or counted anywhere.
 
 ## Environment
 

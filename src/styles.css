@@ -129,7 +129,8 @@ button:focus-visible {
 .nav {
   margin-top: 0.75rem;
   display: flex;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
 }
 
 .nav a {
@@ -852,6 +853,125 @@ button:focus-visible {
   height: 100%;
   background: var(--brand);
   min-width: 0;
+}
+
+/* My ballot */
+.ballot-toggle {
+  margin-top: 0.6rem;
+  font: 500 0.75rem var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.ballot-toggle:hover {
+  border-color: var(--brand);
+}
+
+.ballot-toggle-on {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+.myballot-sub {
+  margin: -0.5rem 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.myballot-warning {
+  background: #fdf3e0;
+  border: 1px solid #e0c48f;
+  border-left: 4px solid #8a5a00;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.92rem;
+}
+
+.myballot-race {
+  margin-bottom: 1.25rem;
+}
+
+.myballot-office {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+
+.myballot-picks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.myballot-picks li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.myballot-name {
+  font-weight: 700;
+}
+
+.myballot-party {
+  margin-left: 0.6rem;
+  font-family: var(--font-data);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.myballot-remaining {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.ballot-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.ballot-actions .print-button {
+  float: none;
+}
+
+.ballot-clear {
+  font: 500 0.85rem var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.myballot-foot {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--rule);
+  padding-top: 0.75rem;
+}
+
+@media print {
+  /* Printing an in-shell view (my ballot): strip the chrome only —
+     never informational content like suspended badges */
+  .masthead,
+  .deadline-banner,
+  .ballot-actions,
+  .ballot-toggle {
+    display: none;
+  }
+
+  .myballot .myballot-warning {
+    border: 1px solid #000;
+  }
 }
 
 /* Small screens */

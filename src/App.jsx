@@ -10,6 +10,8 @@ import NewsletterView from './views/NewsletterView.jsx';
 import Results from './views/Results.jsx';
 import Questionnaire from './views/Questionnaire.jsx';
 import News from './views/News.jsx';
+import MyBallot from './views/MyBallot.jsx';
+import { initMyBallot, useMyBallot } from './myballot.js';
 
 export default function App() {
   const [guide, setGuide] = useState(null);
@@ -17,7 +19,10 @@ export default function App() {
   const route = useHashRoute();
 
   useEffect(() => {
-    loadGuide().then(setGuide, setError);
+    loadGuide().then((g) => {
+      initMyBallot(g);
+      setGuide(g);
+    }, setError);
   }, []);
 
   const routeKey = route.join('/');
@@ -104,12 +109,22 @@ export default function App() {
               News
             </a>
           )}
+          <MyBallotNavLink active={route[0] === 'myballot'} />
         </nav>
       </header>
       <main>
         <Route route={route} guide={guide} />
       </main>
     </div>
+  );
+}
+
+function MyBallotNavLink({ active }) {
+  const picks = useMyBallot();
+  return (
+    <a className={active ? 'nav-active' : ''} href="#/myballot">
+      My ballot{picks.length > 0 && ` (${picks.length})`}
+    </a>
   );
 }
 
@@ -120,6 +135,7 @@ function viewTitle(route, guide) {
   }
   if (route[0] === 'vote') return 'How to vote';
   if (route[0] === 'news') return 'Race coverage';
+  if (route[0] === 'myballot') return 'My ballot';
   if (route[0] === 'print') return 'Print guide';
   if (route[0] === 'newsletter') return 'Newsletter block';
   if (route.length === 0 && guide.election.results.enabled) return 'Primary results';
@@ -138,6 +154,7 @@ function Route({ route, guide }) {
   if (route[0] === 'race' && route[1]) return <RaceDetail guide={guide} raceId={route[1]} />;
   if (route[0] === 'vote') return <HowToVote guide={guide} />;
   if (route[0] === 'news') return <News guide={guide} />;
+  if (route[0] === 'myballot') return <MyBallot guide={guide} />;
   return (
     <p>
       Page not found. <a href="#/">Back to the guide</a>

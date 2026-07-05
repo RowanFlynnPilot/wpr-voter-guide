@@ -1,3 +1,5 @@
+import { useMyBallot, togglePick } from '../myballot.js';
+
 // One identical layout for every candidate — equal space, alphabetical
 // order comes from the data layer. bio/occupation are self-stated sources
 // only; empty fields mean "not yet verified" and render as nothing.
@@ -5,6 +7,8 @@
 // without one gets the same-size neutral initials placeholder, never a
 // stock image and never a different layout.
 export default function CandidateCard({ candidate, photoBase, positionsActive }) {
+  const picks = useMyBallot();
+  const picked = picks.includes(candidate.id);
   return (
     <div className="candidate-card">
       <div className="candidate-head">
@@ -38,6 +42,13 @@ export default function CandidateCard({ candidate, photoBase, positionsActive })
       {candidate.photo && candidate.photo_credit && (
         <p className="photo-credit">Photo: {candidate.photo_credit}</p>
       )}
+      <button
+        className={picked ? 'ballot-toggle ballot-toggle-on' : 'ballot-toggle'}
+        onClick={() => togglePick(candidate.id)}
+        aria-pressed={picked}
+      >
+        {picked ? '✓ On my ballot' : '+ My ballot'}
+      </button>
     </div>
   );
 }

@@ -37,6 +37,13 @@ export function formatDate(iso) {
   });
 }
 
+export function formatHour(hhmm) {
+  const [h, m] = hhmm.split(':').map(Number);
+  const suffix = h >= 12 ? 'p.m.' : 'a.m.';
+  const hour12 = h % 12 === 0 ? 12 : h % 12;
+  return m === 0 ? `${hour12} ${suffix}` : `${hour12}:${String(m).padStart(2, '0')} ${suffix}`;
+}
+
 export function formatDateShort(iso) {
   const [y, m, d] = iso.split('-').map(Number);
   return new Date(y, m - 1, d).toLocaleDateString('en-US', {

@@ -1,6 +1,6 @@
 import { LEVEL_ORDER } from '../parties.js';
 import { PARTY_LABEL } from '../parties.js';
-import { formatDate, formatDateShort } from '../dates.js';
+import { formatDate, formatDateShort, formatHour } from '../dates.js';
 
 // One-page cheat sheet. Print stylesheet renders it black on white with
 // no backgrounds; the guide URL goes in the footer.
@@ -73,11 +73,4 @@ export default function PrintView({ guide }) {
       </footer>
     </div>
   );
-}
-
-function formatHour(hhmm) {
-  const [h, m] = hhmm.split(':').map(Number);
-  const suffix = h >= 12 ? 'p.m.' : 'a.m.';
-  const hour12 = h % 12 === 0 ? 12 : h % 12;
-  return m === 0 ? `${hour12} ${suffix}` : `${hour12}:${String(m).padStart(2, '0')} ${suffix}`;
 }
