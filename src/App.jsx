@@ -11,6 +11,7 @@ import Results from './views/Results.jsx';
 import Questionnaire from './views/Questionnaire.jsx';
 import News from './views/News.jsx';
 import MyBallot from './views/MyBallot.jsx';
+import ShareButton from './components/ShareButton.jsx';
 import { initMyBallot, useMyBallot } from './myballot.js';
 
 export default function App() {
@@ -110,6 +111,7 @@ export default function App() {
             </a>
           )}
           <MyBallotNavLink active={route[0] === 'myballot'} />
+          <ShareButton instance={instance} election={election} />
         </nav>
       </header>
       <main>

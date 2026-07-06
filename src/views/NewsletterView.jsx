@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { nextDeadline, daysUntil, formatDate } from '../dates.js';
+import { guideUrl as canonicalGuideUrl } from '../urls.js';
 
 // Email-safe block for MailerLite: table layout, 600px, every style
 // inline, web-safe fonts only. Devon copies the rendered HTML each send.
@@ -10,7 +11,7 @@ export default function NewsletterView({ guide }) {
 
   const days = daysUntil(election.date);
   const next = nextDeadline(election.deadlines);
-  const guideUrl = window.location.origin + window.location.pathname;
+  const guideUrl = canonicalGuideUrl(instance);
 
   const copyHtml = async () => {
     await navigator.clipboard.writeText(blockRef.current.innerHTML.trim());

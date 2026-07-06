@@ -14,6 +14,7 @@ Paste this into a Custom HTML block on the WordPress page:
   src="https://rowanflynnpilot.github.io/wpr-voter-guide/"
   style="width: 100%; border: 0; display: block;"
   height="900"
+  allow="web-share; clipboard-write"
   title="Voter Guide — Wisconsin Partisan Primary, August 11, 2026"
 ></iframe>
 <script>
@@ -52,6 +53,14 @@ Paste this into a Custom HTML block on the WordPress page:
 - The `height="900"` attribute is only the pre-JavaScript fallback size.
 
 ## Notes
+
+- The `allow="web-share; clipboard-write"` attribute lets the guide's
+  Share button use the phone's native share sheet and the clipboard from
+  inside the iframe. Without it the button still works via a copy prompt.
+- **Once this page is published**, paste its permalink into
+  `publication.guide_url` in config/instance.json — the Share button,
+  /print footer, /newsletter CTA, and my-ballot footer all switch from
+  the GitHub Pages URL to the WordPress page automatically.
 
 - Deep links work: append a hash route to the src to open a specific view,
   e.g. `.../wpr-voter-guide/#/vote` for the how-to-vote page.

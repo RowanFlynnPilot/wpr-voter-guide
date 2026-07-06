@@ -3,6 +3,7 @@
     "id": "wpr",
     "name": "Wausau Pilot & Review",
     "url": "https://wausaupilotandreview.com",
+    "guide_url": "",
     "logo": "config/wpr-logo.png",
     "icon": "config/wpr-icon.png"
   },

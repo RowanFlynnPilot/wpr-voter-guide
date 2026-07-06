@@ -1,6 +1,7 @@
 import { LEVEL_ORDER, PARTY_LABEL, PARTY_NOUN } from '../parties.js';
 import { formatDate, formatHour } from '../dates.js';
 import { useMyBallot, clearPicks } from '../myballot.js';
+import { guideUrl } from '../urls.js';
 
 // The reader's own checklist — picks stay in their browser, period.
 // Every candidate gets the identical toggle; a pick here is the
@@ -98,8 +99,7 @@ export default function MyBallot({ guide }) {
 
       <p className="myballot-foot">
         Polls are open {formatHour(election.polls.open)}–{formatHour(election.polls.close)} on
-        election day. Bring photo ID. Full guide:{' '}
-        {window.location.origin + window.location.pathname}
+        election day. Bring photo ID. Full guide: {guideUrl(guide.instance)}
       </p>
     </div>
   );

@@ -1,6 +1,7 @@
 import { LEVEL_ORDER } from '../parties.js';
 import { PARTY_LABEL } from '../parties.js';
 import { formatDate, formatDateShort, formatHour } from '../dates.js';
+import { guideUrl } from '../urls.js';
 
 // One-page cheat sheet. Print stylesheet renders it black on white with
 // no backgrounds; the guide URL goes in the footer.
@@ -9,7 +10,7 @@ export default function PrintView({ guide }) {
   const races = LEVEL_ORDER.flatMap((level) =>
     ballot.races.filter((r) => r.level === level)
   );
-  const guideUrl = window.location.origin + window.location.pathname;
+  const url = guideUrl(instance);
 
   return (
     <div className="print-view">
@@ -67,7 +68,7 @@ export default function PrintView({ guide }) {
 
       <footer className="print-foot">
         <p>
-          Full guide with candidate details: {guideUrl} · Remember: vote in only ONE
+          Full guide with candidate details: {url} · Remember: vote in only ONE
           party's primary. Bring photo ID.
         </p>
       </footer>

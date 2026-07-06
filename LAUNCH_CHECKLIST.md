@@ -72,8 +72,11 @@ of record: WEC filings and candidates' own materials.
       branding renders on landing and how-to-vote only, never race pages.
 - [ ] Embed on a draft WordPress page with the EMBED.md snippet (includes
       the scroll-to-top listener); hand-check on a real phone.
-- [ ] Confirm the guide URL in /print footer and /newsletter CTA points
-      where you want readers to land (currently the Pages URL).
+- [ ] **Once the WordPress guide page publishes, paste its permalink into
+      `publication.guide_url` in config/instance.json** — the Share
+      button, /print footer, /newsletter CTA, and my-ballot footer all
+      point there automatically (currently they fall back to the Pages
+      URL).
 
 ## 7. Election night (see RESULTS_RUNBOOK.md)
 

@@ -154,6 +154,23 @@ button:focus-visible {
   font-weight: 500;
 }
 
+.share-button {
+  margin-left: auto;
+  font: 500 0.75rem var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+  align-self: center;
+}
+
+.share-button:hover {
+  border-color: var(--brand);
+}
+
 /* Race browser */
 .deadline-banner {
   display: flex;

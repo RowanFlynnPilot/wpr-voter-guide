@@ -42,7 +42,7 @@ identity — no other file repeats candidate names.
 
 ```json
 {
-  "publication": { "id": "wpr", "name": "...", "url": "...", "logo": "config/wpr-logo.png", "icon": "config/wpr-icon.png" },
+  "publication": { "id": "wpr", "name": "...", "url": "...", "guide_url": "", "logo": "config/wpr-logo.png", "icon": "config/wpr-icon.png" },
   "geographies": ["wi", "wi-cd-07", "wi-marathon"],
   "theme": { "colors": {...}, "fonts": {...} },
   "sponsor": null,
@@ -53,6 +53,10 @@ identity — no other file repeats candidate names.
 - `geographies` is the multi-tenant hook: the app renders only races whose
   `geography` tags intersect this list. A second publication = a second
   instance.json, zero code changes.
+- `guide_url` is the guide's canonical public URL — the WordPress page
+  permalink once it publishes, `""` until then (falls back to the app's
+  own location). Feeds the Share button, /print footer, /newsletter CTA,
+  and the my-ballot footer.
 - `sponsor` is `null` or `{ "name", "logo_url", "url", "disclosure" }`.
   Sponsor branding renders on the landing view and how-to-vote view ONLY.
   Never on race or candidate views. This is an editorial integrity rule,
