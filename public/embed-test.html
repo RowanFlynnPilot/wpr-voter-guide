@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Embed test — WPR Voter Guide</title>
+    <style>
+      body { margin: 0; font-family: Georgia, serif; background: #f5f5f5; }
+      .fake-article { max-width: 780px; margin: 0 auto; padding: 2rem 1rem; background: #fff; }
+      .fake-article h1 { font-family: Helvetica, Arial, sans-serif; }
+      .filler { color: #555; }
+    </style>
+  </head>
+  <body>
+    <!-- Simulates the WordPress article around the iframe so the embed
+         (height resize + scroll-to-top + share) can be hand-checked
+         before the real page exists. Uses the EMBED.md snippet verbatim
+         below. Not linked from anywhere; visit /embed-test.html directly. -->
+    <div class="fake-article">
+      <h1>Embed test page</h1>
+      <p class="filler">
+        This paragraph stands in for article text above the embed. Scroll to the
+        bottom of a long guide view, tap a race, and confirm the page snaps back
+        to the top of the guide. Resize the window and confirm no inner scrollbar
+        ever appears. Try the Share button.
+      </p>
+
+      <iframe
+        id="wpr-voter-guide"
+        src="https://rowanflynnpilot.github.io/wpr-voter-guide/"
+        style="width: 100%; border: 0; display: block;"
+        height="900"
+        allow="web-share; clipboard-write"
+        title="Voter Guide — Wisconsin Partisan Primary, August 11, 2026"
+      ></iframe>
+      <script>
+        window.addEventListener('message', function (event) {
+          if (event.origin !== 'https://rowanflynnpilot.github.io') return;
+          if (!event.data) return;
+          var frame = document.getElementById('wpr-voter-guide');
+          if (event.data.type === 'wpr-guide-height') {
+            frame.height = event.data.height;
+          }
+          if (event.data.type === 'wpr-guide-nav') {
+            if (frame.getBoundingClientRect().top < 0) {
+              frame.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      </script>
+
+      <p class="filler">
+        This paragraph stands in for article text below the embed — if the iframe
+        height tracking works, it should sit right under the guide with no gap
+        and no clipping.
+      </p>
+    </div>
+  </body>
+</html>

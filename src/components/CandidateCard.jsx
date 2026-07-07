@@ -65,8 +65,10 @@ function Positions({ positions }) {
         <p className="positions-none">No stated positions available</p>
       ) : (
         <>
+          {/* statement as key: topics can repeat (e.g. an unheaded
+              "Vision" section quoted three times) */}
           {positions.map((p) => (
-            <p key={p.topic} className="position">
+            <p key={p.statement} className="position">
               <strong>{p.topic}:</strong> “{p.statement}”{' '}
               <a href={p.source_url} target="_blank" rel="noopener noreferrer">
                 source
@@ -87,6 +89,9 @@ function Headshot({ candidate, photoBase }) {
         className="candidate-photo"
         src={photoBase + candidate.photo}
         alt={candidate.name}
+        width="56"
+        height="56"
+        loading="lazy"
       />
     );
   }
