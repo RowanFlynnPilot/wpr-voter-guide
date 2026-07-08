@@ -7,11 +7,15 @@ of record: WEC filings and candidates' own materials.
 
 ## 1. Hard deadline first
 
-- [ ] **Questionnaire go/no-go (Shereen), questions to candidates by ~July 8**
-      — two-week response window before launch. If GO, request a headshot
-      in the same email (see §5). If NO-GO, `questions` stays `[]` and the
-      comparison view never appears; the stated-positions blocks carry the
-      "own words" load instead.
+- [x] **Questionnaire: NO-GO (decided July 8).** `questions` stays `[]`;
+      the comparison view never appears. The stated-positions blocks are
+      now the guide's only "in their own words" layer — which upgrades
+      §3's quote verification and per-race fairness calls from
+      important to launch-critical.
+- [ ] **Send the outreach email anyway** — CANDIDATE_OUTREACH.md has the
+      no-questionnaire version: headshot request + data corrections +
+      the stated-positions notice. One per campaign, reply deadline at
+      least a week out.
 
 ## 2. Roster verification (against WEC certification)
 
