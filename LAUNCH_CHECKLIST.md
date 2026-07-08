@@ -47,8 +47,10 @@ of record: WEC filings and candidates' own materials.
       Godlewski, Leiber, Hermening have no platform content — decide if
       "No stated positions available" is fair per race, or blank that
       race's positions to deactivate the block.
-- [ ] Race `context` paragraphs still carry "EDITORIAL:" draft prefixes —
-      rewrite as reader-facing copy.
+- [ ] Race `context` paragraphs were rewritten as reader-facing copy on
+      July 8 (draft markers removed from display) — Shereen reviews and
+      edits the wording like all drafted copy. The warnings those markers
+      carried live in this checklist (esp. §2's challenged SoS trio).
 
 ## 4. Coverage links (drafted July 4)
 
