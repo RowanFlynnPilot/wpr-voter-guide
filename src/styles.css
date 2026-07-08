@@ -26,6 +26,28 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* The guide's palette is deliberate; block UA auto-darkening in embeds */
+  color-scheme: light;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
 body {
   margin: 0;
   background: var(--paper);
@@ -54,9 +76,13 @@ button:focus-visible {
 }
 
 .loading {
-  padding: 3rem 1.25rem;
+  padding: 4.5rem 1.25rem;
   text-align: center;
   color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .load-error {
@@ -165,6 +191,7 @@ button:focus-visible {
   padding: 0.25rem 0.7rem;
   cursor: pointer;
   align-self: center;
+  transition: border-color 0.15s ease;
 }
 
 .share-button:hover {
@@ -223,21 +250,36 @@ button:focus-visible {
 }
 
 .race-card {
+  position: relative;
   display: block;
   background: var(--card);
   border: 1px solid var(--rule);
   border-left: 4px solid var(--brand);
-  padding: 0.9rem 1.1rem;
+  padding: 0.9rem 3rem 0.9rem 1.1rem;
   text-decoration: none;
   color: var(--ink);
+  transition: background-color 0.15s ease;
 }
 
-.race-card {
-  transition: background-color 0.15s ease;
+.race-card::after {
+  content: '→';
+  position: absolute;
+  right: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--rule);
+  transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .race-card:hover {
   background: var(--wash);
+}
+
+.race-card:hover::after {
+  color: var(--brand);
+  transform: translateY(-50%) translateX(3px);
 }
 
 .race-card-office {
@@ -434,6 +476,20 @@ button:focus-visible {
 .position {
   margin: 0 0 0.35rem;
   font-size: 0.9rem;
+}
+
+/* Source citations read as footnotes, not body links */
+.position a {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration-color: var(--accent);
+}
+
+.position a:hover {
+  color: var(--brand);
 }
 
 .positions-note {
@@ -907,6 +963,7 @@ button:focus-visible {
   color: var(--ink);
   padding: 0.35rem 0.7rem;
   cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .ballot-toggle:hover {
