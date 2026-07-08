@@ -679,13 +679,29 @@
             {
               "id": "varnam-david",
               "name": "David Varnam",
-              "residence": "",
+              "residence": "Lancaster",
               "occupation": "",
-              "website": "",
+              "website": "https://davidvarnam.com",
               "photo": "",
               "photo_credit": "",
-              "bio": "",
-              "positions": [],
+              "bio": "Former mayor of Lancaster, elected in 2016. Former congressional aide and federal policy analyst.",
+              "positions": [
+                {
+                  "topic": "Taxes",
+                  "statement": "I will work to lower taxes to keep our retirees, young people, and businesses in Wisconsin. As mayor, I vetoed a 40% increase in the stormwater fee and defeated a proposed wheel tax.",
+                  "source_url": "https://davidvarnam.com/issues"
+                },
+                {
+                  "topic": "Protecting Women Sports",
+                  "statement": "As a Father of two daughters, I will fight to keep men out of women's sports and protect their locker rooms.",
+                  "source_url": "https://davidvarnam.com/issues"
+                },
+                {
+                  "topic": "Immigration",
+                  "statement": "Wisconsin needs a new Republican Administration in Madison that will work with President Trump. As Lieutenant Governor, I will ensure that our state and local law enforcement work with federal immigration agencies to deport criminal illegal aliens.",
+                  "source_url": "https://davidvarnam.com/issues"
+                }
+              ],
               "status": "active",
               "status_note": "",
               "questionnaire": null

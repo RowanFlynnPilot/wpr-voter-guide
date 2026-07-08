@@ -68,7 +68,7 @@ Commons file with caveats noted below.
 |---|---|---|---|---|---|
 | Sarah Godlewski (D) | [Official SOS page](https://sos.wi.gov/Pages/About.aspx) | State work, © State of Wisconsin — ask SOS office | Courtesy credit | High | |
 | Will Martin (R) | [votewillmartin.com](https://votewillmartin.com/) headshots | Copyrighted — ask campaign | Campaign courtesy | High | |
-| David Varnam (R) | **Not yet researched** — added July 4 after the WEC roster correction (see flags) | — | — | — | |
+| David Varnam (R) | No usable headshot — [davidvarnam.com](https://davidvarnam.com/) has only family/event photos; no Commons file, no official portrait (former, not current, officeholder) | Ask campaign (PO Box 604, Lancaster; site contact) | Campaign courtesy | High (identity) | |
 
 Removed July 4: Cyril Sablich — the WEC June 9 report shows his ballot
 access was DENIED; he was in the seed in error and is no longer in
