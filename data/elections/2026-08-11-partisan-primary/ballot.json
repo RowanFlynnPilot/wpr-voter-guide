@@ -4,6 +4,7 @@
     {
       "id": "us-house-wi-07",
       "office": "U.S. House — 7th Congressional District",
+      "office_note": "One of Wisconsin's eight seats in the U.S. House of Representatives, which writes federal law and controls federal spending. The 7th District covers much of northern and central Wisconsin, including the Wausau area. Two-year term.",
       "level": "federal",
       "geography": [
         "wi-cd-07"
@@ -294,6 +295,7 @@
     {
       "id": "governor",
       "office": "Governor",
+      "office_note": "The state's chief executive: signs or vetoes bills passed by the Legislature, proposes the state budget, appoints agency heads, and fills vacancies in state offices and courts. Four-year term.",
       "level": "statewide",
       "geography": [
         "wi"
@@ -608,6 +610,7 @@
     {
       "id": "lt-governor",
       "office": "Lieutenant Governor",
+      "office_note": "First in line to serve as governor if that office becomes vacant; other duties are largely assigned by the governor. Nominated separately in the primary, then elected on a joint ticket with the governor's nominee in November. Four-year term.",
       "level": "statewide",
       "geography": [
         "wi"
@@ -713,6 +716,7 @@
     {
       "id": "attorney-general",
       "office": "Attorney General",
+      "office_note": "The state's chief lawyer: leads the Wisconsin Department of Justice, represents the state in court, issues formal opinions on state law, and oversees the state crime laboratories. Four-year term.",
       "level": "statewide",
       "geography": [
         "wi"
@@ -805,6 +809,7 @@
     {
       "id": "secretary-of-state",
       "office": "Secretary of State",
+      "office_note": "Keeper of the state's official acts and the Great Seal. Unlike in many states, Wisconsin's secretary of state has no role in running elections — the Wisconsin Elections Commission administers those. Four-year term.",
       "level": "statewide",
       "geography": [
         "wi"
@@ -931,6 +936,7 @@
     {
       "id": "state-treasurer",
       "office": "State Treasurer",
+      "office_note": "A constitutional office with few remaining statutory duties. The treasurer serves on the Board of Commissioners of Public Lands, which manages state trust lands and funds that support public school libraries. Four-year term.",
       "level": "statewide",
       "geography": [
         "wi"
