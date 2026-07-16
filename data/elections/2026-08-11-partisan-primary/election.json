@@ -57,8 +57,11 @@
     "register": "https://myvote.wi.gov/en-us/Register-To-Vote",
     "polling_place": "https://myvote.wi.gov/en-us/Find-My-Polling-Place",
     "absentee": "https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail",
+    "track_ballot": "https://myvote.wi.gov/en-us/Track-My-Ballot",
+    "whats_on_ballot": "https://myvote.wi.gov/en-us/Whats-On-My-Ballot",
     "wec_hub": "https://elections.wi.gov/2026"
   },
+  "ballot_note": "This guide covers the federal and statewide races on every Wausau-area ballot. Depending on where you live, your ballot may also include state legislative and county primaries.",
   "explainers": [
     {
       "id": "open-primary",
@@ -68,7 +71,9 @@
     {
       "id": "photo-id",
       "title": "Bring photo ID",
-      "body": "Wisconsin requires an acceptable photo ID to receive a ballot, whether you vote early, absentee, or on election day. A Wisconsin driver's license or state ID card, U.S. passport, military ID, and certain student IDs all qualify."
+      "body": "Wisconsin requires an acceptable photo ID to receive a ballot, whether you vote early, absentee, or on election day. A Wisconsin driver's license or state ID card, U.S. passport, military ID, and certain student IDs all qualify.",
+      "link": "https://bringit.wi.gov",
+      "link_label": "See every acceptable ID at Bring It to the Ballot →"
     },
     {
       "id": "what-this-decides",

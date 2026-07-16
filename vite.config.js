@@ -35,5 +35,7 @@ function staticData() {
 
 export default defineConfig({
   base: '/wpr-voter-guide/',
+  // Dev harness may assign a port via PORT; Vite's default otherwise.
+  server: { port: Number(process.env.PORT) || 5173 },
   plugins: [react(), staticData()],
 });

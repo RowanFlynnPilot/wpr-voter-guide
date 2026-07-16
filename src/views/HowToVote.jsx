@@ -1,4 +1,5 @@
 import { isPast, nextDeadline, formatDate } from '../dates.js';
+import { deadlineIcs } from '../calendar.js';
 import Sponsor from '../components/Sponsor.jsx';
 
 export default function HowToVote({ guide }) {
@@ -30,6 +31,17 @@ export default function HowToVote({ guide }) {
                     Details at MyVote →
                   </a>
                 </p>
+                {!past && (
+                  <p className="ics-line">
+                    <a
+                      className="ics-link"
+                      href={deadlineIcs(election, d)}
+                      download={`${d.id}.ics`}
+                    >
+                      + Add to my calendar
+                    </a>
+                  </p>
+                )}
               </li>
             );
           })}
@@ -42,6 +54,13 @@ export default function HowToVote({ guide }) {
           <div key={e.id} className="explainer">
             <h4 className="explainer-title">{e.title}</h4>
             <p className="explainer-body">{e.body}</p>
+            {e.link && (
+              <p className="explainer-link">
+                <a href={e.link} target="_blank" rel="noopener noreferrer">
+                  {e.link_label}
+                </a>
+              </p>
+            )}
           </div>
         ))}
       </section>
@@ -62,6 +81,16 @@ export default function HowToVote({ guide }) {
           <li>
             <a href={election.links.absentee} target="_blank" rel="noopener noreferrer">
               Request an absentee ballot
+            </a>
+          </li>
+          <li>
+            <a href={election.links.track_ballot} target="_blank" rel="noopener noreferrer">
+              Track your absentee ballot
+            </a>
+          </li>
+          <li>
+            <a href={election.links.whats_on_ballot} target="_blank" rel="noopener noreferrer">
+              Preview everything on your ballot
             </a>
           </li>
           <li>

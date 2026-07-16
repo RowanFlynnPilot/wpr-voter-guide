@@ -67,6 +67,7 @@ export default function PrintView({ guide }) {
       </section>
 
       <footer className="print-foot">
+        {election.ballot_note && <p>{election.ballot_note}</p>}
         <p>
           Full guide with candidate details: {url} · Remember: vote in only ONE
           party's primary. Bring photo ID.

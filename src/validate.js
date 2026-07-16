@@ -35,10 +35,30 @@ export function validateElection(election, instance) {
   if (!election.polls?.open || !election.polls?.close) {
     fail('election.json polls must have open and close times');
   }
-  for (const key of ['myvote_home', 'register', 'polling_place', 'absentee', 'wec_hub']) {
+  for (const key of [
+    'myvote_home',
+    'register',
+    'polling_place',
+    'absentee',
+    'track_ballot',
+    'whats_on_ballot',
+    'wec_hub',
+  ]) {
     if (!election.links?.[key]) fail(`election.json links is missing "${key}"`);
   }
+  // "" is valid — it means this guide covers the reader's whole ballot.
+  if (typeof election.ballot_note !== 'string') {
+    fail('election.json ballot_note must be a string');
+  }
   if (!Array.isArray(election.explainers)) fail('election.json explainers must be an array');
+  for (const e of election.explainers) {
+    if (!e.id || !e.title || !e.body) {
+      fail(`explainer "${e.id ?? '(no id)'}" is missing id, title, or body`);
+    }
+    if (Boolean(e.link) !== Boolean(e.link_label)) {
+      fail(`explainer "${e.id}" must have both link and link_label, or neither`);
+    }
+  }
 }
 
 export function validateBallot(ballot, instance) {

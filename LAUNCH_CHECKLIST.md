@@ -73,7 +73,13 @@ of record: WEC filings and candidates' own materials.
 ## 6. Logistics + product
 
 - [ ] Verify all MyVote deep links in election.json resolve (entered from
-      memory per BUILD_PLAN).
+      memory per BUILD_PLAN). `track_ballot` and `whats_on_ballot` were
+      verified live in a browser July 15; `bringit.wi.gov` (photo-ID
+      explainer link) confirmed the same day via its redirect to the WEC
+      photo-ID page.
+- [ ] Download one "Add to my calendar" .ics from How to Vote and open it
+      in Google Calendar or Outlook — confirm the event lands on the right
+      day with the right title.
 - [ ] Sponsor decision: `sponsor` is null; if one signs, add the block —
       branding renders on landing and how-to-vote only, never race pages.
 - [ ] Embed on a draft WordPress page with the EMBED.md snippet (includes

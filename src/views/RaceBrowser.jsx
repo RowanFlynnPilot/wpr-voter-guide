@@ -1,5 +1,5 @@
 import { LEVEL_ORDER, LEVEL_LABEL, PARTY_NOUN } from '../parties.js';
-import { nextDeadline, formatDate } from '../dates.js';
+import { nextDeadline, formatDate, formatHour, daysUntil } from '../dates.js';
 import Sponsor from '../components/Sponsor.jsx';
 
 function countLine(race) {
@@ -14,11 +14,25 @@ function countLine(race) {
 
 export default function RaceBrowser({ guide }) {
   const { races } = guide.ballot;
+  const { election } = guide;
   const levels = LEVEL_ORDER.filter((level) => races.some((r) => r.level === level));
-  const next = nextDeadline(guide.election.deadlines);
+  const next = nextDeadline(election.deadlines);
+  const days = daysUntil(election.date);
 
   return (
     <div>
+      {days > 0 && (
+        <p className="countdown">
+          <span className="countdown-num">{days}</span> {days === 1 ? 'day' : 'days'} until
+          the primary
+        </p>
+      )}
+      {days === 0 && (
+        <p className="countdown">
+          <strong>Today is election day.</strong> Polls are open until{' '}
+          {formatHour(election.polls.close)}.
+        </p>
+      )}
       {next && (
         <a className="deadline-banner" href="#/vote">
           <span className="deadline-banner-label">Next deadline</span>
@@ -44,6 +58,18 @@ export default function RaceBrowser({ guide }) {
           </div>
         </section>
       ))}
+      {election.ballot_note && (
+        <p className="ballot-note">
+          {election.ballot_note}{' '}
+          <a
+            href={election.links.whats_on_ballot}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Preview your exact ballot at MyVote →
+          </a>
+        </p>
+      )}
       <Sponsor sponsor={guide.instance.sponsor} />
     </div>
   );

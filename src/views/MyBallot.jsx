@@ -97,6 +97,19 @@ export default function MyBallot({ guide }) {
         </button>
       </div>
 
+      {election.ballot_note && (
+        <p className="ballot-note">
+          {election.ballot_note}{' '}
+          <a
+            href={election.links.whats_on_ballot}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Preview your exact ballot at MyVote →
+          </a>
+        </p>
+      )}
+
       <p className="myballot-foot">
         Polls are open {formatHour(election.polls.open)}–{formatHour(election.polls.close)} on
         election day. Bring photo ID. Full guide: {guideUrl(guide.instance)}

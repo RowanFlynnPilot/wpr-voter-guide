@@ -199,6 +199,32 @@ button:focus-visible {
 }
 
 /* Race browser */
+.countdown {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.countdown-num {
+  font-family: var(--font-data);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  margin-right: 0.15rem;
+}
+
+.ballot-note {
+  margin: 2rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 44rem;
+}
+
 .deadline-banner {
   display: flex;
   flex-wrap: wrap;
@@ -559,6 +585,19 @@ button:focus-visible {
   max-width: 40rem;
 }
 
+.ics-line {
+  margin: 0.35rem 0 0;
+}
+
+.ics-link {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
 .deadline-next {
   border-left-color: var(--accent);
   background: var(--card);
@@ -608,6 +647,12 @@ button:focus-visible {
 .explainer-body {
   margin: 0.4rem 0 0;
   font-size: 0.92rem;
+}
+
+.explainer-link {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .link-list {

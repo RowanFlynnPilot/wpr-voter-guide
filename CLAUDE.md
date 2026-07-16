@@ -65,8 +65,10 @@ identity — no other file repeats candidate names.
 ### data/elections/{id}/election.json — logistics
 
 Election metadata: date, poll hours, deadline array (each with `id`, `date`,
-`label`, `detail`, `link`), MyVote/WEC links, explainer blocks, and the
-results-mode flag:
+`label`, `detail`, `link`), MyVote/WEC links (`myvote_home`, `register`,
+`polling_place`, `absentee`, `track_ballot`, `whats_on_ballot`, `wec_hub` —
+all required), explainer blocks (optional `link` + `link_label`, both or
+neither), `ballot_note`, and the results-mode flag:
 
 ```json
 "results": { "enabled": false, "file": "results.json", "poll_seconds": 60 }
@@ -74,6 +76,13 @@ results-mode flag:
 
 Results mode is toggled by this flag and nothing else. No date-sniffing, no
 environment detection. Flip it in a commit on election day.
+
+- `ballot_note` is the coverage-honesty line ("your ballot may also include
+  state legislative and county primaries…"), rendered on the race browser,
+  my-ballot, and /print with a link to MyVote's ballot preview. `""` means
+  the guide covers the reader's entire ballot.
+- Deadlines render with a client-generated "Add to my calendar" .ics
+  download (src/calendar.js) — all-day events, data: URIs, no server.
 
 ### data/elections/{id}/ballot.json — races and candidates
 
