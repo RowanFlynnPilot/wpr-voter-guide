@@ -118,6 +118,9 @@ button:focus-visible {
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
 }
 
 .masthead-icon {
@@ -322,6 +325,11 @@ button:focus-visible {
   color: var(--muted);
 }
 
+.race-card-pick {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
 .badge {
   display: inline-block;
   font-family: var(--font-body);
@@ -344,6 +352,21 @@ button:focus-visible {
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
+}
+
+.race-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.office-note {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--muted);
+  max-width: 44rem;
 }
 
 .race-title {

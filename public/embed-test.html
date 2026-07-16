@@ -35,19 +35,24 @@
         title="Voter Guide — Wisconsin Partisan Primary, August 11, 2026"
       ></iframe>
       <script>
-        window.addEventListener('message', function (event) {
-          if (event.origin !== 'https://rowanflynnpilot.github.io') return;
-          if (!event.data) return;
+        (function () {
           var frame = document.getElementById('wpr-voter-guide');
-          if (event.data.type === 'wpr-guide-height') {
-            frame.height = event.data.height;
+          if (window.location.hash.indexOf('#/') === 0) {
+            frame.src = frame.src.split('#')[0] + window.location.hash;
           }
-          if (event.data.type === 'wpr-guide-nav') {
-            if (frame.getBoundingClientRect().top < 0) {
-              frame.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.addEventListener('message', function (event) {
+            if (event.origin !== 'https://rowanflynnpilot.github.io') return;
+            if (!event.data) return;
+            if (event.data.type === 'wpr-guide-height') {
+              frame.height = event.data.height;
             }
-          }
-        });
+            if (event.data.type === 'wpr-guide-nav') {
+              if (frame.getBoundingClientRect().top < 0) {
+                frame.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }
+          });
+        })();
       </script>
 
       <p class="filler">

@@ -4,15 +4,18 @@ import { guideUrl } from '../urls.js';
 // "Bookmark" the modern way: native share sheet on phones (which includes
 // add-bookmark / reading list / home screen), clipboard copy on desktop,
 // prompt as the last resort in locked-down iframe contexts.
-export default function ShareButton({ instance, election }) {
+// `path` deep-links a view (e.g. "#/race/governor") — the embed script
+// forwards the published page's hash into the iframe, so these links
+// land on the right view there too.
+export default function ShareButton({ instance, election, path = '', label = 'Share', title }) {
   const [copied, setCopied] = useState(false);
-  const url = guideUrl(instance);
+  const url = guideUrl(instance) + path;
 
   const share = async () => {
-    const title = `Voter Guide — ${election.name}`;
+    const shareTitle = title ?? `Voter Guide — ${election.name}`;
     if (navigator.share) {
       try {
-        await navigator.share({ title, url });
+        await navigator.share({ title: shareTitle, url });
         return;
       } catch (err) {
         if (err.name === 'AbortError') return; // reader closed the sheet
@@ -30,7 +33,7 @@ export default function ShareButton({ instance, election }) {
 
   return (
     <button className="share-button" onClick={share}>
-      {copied ? 'Link copied ✓' : 'Share'}
+      {copied ? 'Link copied ✓' : label}
     </button>
   );
 }

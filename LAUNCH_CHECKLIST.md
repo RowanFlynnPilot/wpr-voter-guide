@@ -51,6 +51,11 @@ of record: WEC filings and candidates' own materials.
       July 8 (draft markers removed from display) — Shereen reviews and
       edits the wording like all drafted copy. The warnings those markers
       carried live in this checklist (esp. §2's challenged SoS trio).
+- [ ] **Six `office_note` lines** (drafted July 15): the "what this
+      office does" italic line under each race title. Verify the civic
+      facts — duties, term lengths, the SoS-doesn't-run-elections point,
+      the treasurer's Board of Commissioners of Public Lands seat — and
+      edit the wording like all drafted copy.
 
 ## 4. Coverage links (drafted July 4)
 

@@ -61,7 +61,14 @@ export default function App() {
   return (
     <div className="app">
       <header className="masthead">
-        <div className="masthead-brand">
+        {/* target="_top": from inside the embed this navigates the whole
+            WordPress page back to the site, not just the iframe */}
+        <a
+          className="masthead-brand"
+          href={instance.publication.url}
+          target="_top"
+          rel="noopener noreferrer"
+        >
           {instance.publication.icon && (
             <img
               className="masthead-icon"
@@ -78,7 +85,7 @@ export default function App() {
           ) : (
             <span>{instance.publication.name}</span>
           )}
-        </div>
+        </a>
         <h1 className="masthead-title">
           <a className="masthead-link" href="#/">
             Voter Guide

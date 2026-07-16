@@ -18,21 +18,29 @@ Paste this into a Custom HTML block on the WordPress page:
   title="Voter Guide — Wisconsin Partisan Primary, August 11, 2026"
 ></iframe>
 <script>
-  window.addEventListener('message', function (event) {
-    if (event.origin !== 'https://rowanflynnpilot.github.io') return;
-    if (!event.data) return;
+  (function () {
     var frame = document.getElementById('wpr-voter-guide');
-    if (event.data.type === 'wpr-guide-height') {
-      frame.height = event.data.height;
+    // Shared deep links carry the guide's route as this page's own hash
+    // (e.g. .../voter-guide/#/race/governor); forward it into the iframe
+    // so the link lands on that view.
+    if (window.location.hash.indexOf('#/') === 0) {
+      frame.src = frame.src.split('#')[0] + window.location.hash;
     }
-    if (event.data.type === 'wpr-guide-nav') {
-      // Reader navigated inside the guide; if they were scrolled deep
-      // into the previous view, bring them back to the guide's top.
-      if (frame.getBoundingClientRect().top < 0) {
-        frame.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.addEventListener('message', function (event) {
+      if (event.origin !== 'https://rowanflynnpilot.github.io') return;
+      if (!event.data) return;
+      if (event.data.type === 'wpr-guide-height') {
+        frame.height = event.data.height;
       }
-    }
-  });
+      if (event.data.type === 'wpr-guide-nav') {
+        // Reader navigated inside the guide; if they were scrolled deep
+        // into the previous view, bring them back to the guide's top.
+        if (frame.getBoundingClientRect().top < 0) {
+          frame.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  })();
 </script>
 ```
 
@@ -62,8 +70,11 @@ Paste this into a Custom HTML block on the WordPress page:
   /print footer, /newsletter CTA, and my-ballot footer all switch from
   the GitHub Pages URL to the WordPress page automatically.
 
-- Deep links work: append a hash route to the src to open a specific view,
-  e.g. `.../wpr-voter-guide/#/vote` for the how-to-vote page.
+- Deep links work two ways: append a hash route to the iframe src to open
+  a specific view (e.g. `.../wpr-voter-guide/#/vote`), or put the route on
+  the published page's own URL (`<permalink>#/race/governor`) — the
+  snippet forwards that hash into the iframe. The guide's "Share this
+  race" button produces links in the second form.
 - On election night no embed change is needed — the same iframe flips to
   results mode when `results.enabled` goes true.
 - The /print and /newsletter routes are internal tools; don't embed them.

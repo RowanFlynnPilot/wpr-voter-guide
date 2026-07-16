@@ -92,6 +92,7 @@ environment detection. Flip it in a commit on election day.
   "races": [{
     "id": "us-house-wi-07",
     "office": "U.S. House — 7th Congressional District",
+    "office_note": "What this office does + term length, neutral civic facts. Editorial-owned. \"\" = none.",
     "level": "federal",          // federal | statewide | legislative | county
     "geography": ["wi-cd-07"],
     "open_seat": true,
@@ -159,7 +160,9 @@ here. When `results.enabled` is true and the fetch fails, show an error state
    `status_note`.
 4. If the questionnaire is active, non-responders get an explicit
    "Did not respond" label — that label is itself information for voters.
-5. Race `context` paragraphs are editorial-owned copy. Neutral framing.
+5. Race `context` paragraphs and `office_note` lines are editorial-owned
+   copy. Neutral framing; office notes state civic facts (duties, term
+   length), never the office's political stakes.
 6. **Seeded data in ballot.json was compiled from news coverage in July 2026
    and MUST pass an editorial verification check against WEC filings and
    campaign sites before launch.** Empty fields are intentional — they mean

@@ -7,8 +7,8 @@ function fail(msg) {
 }
 
 export function validateInstance(instance) {
-  if (!instance.publication?.id || !instance.publication?.name) {
-    fail('instance.json is missing publication id or name');
+  if (!instance.publication?.id || !instance.publication?.name || !instance.publication?.url) {
+    fail('instance.json is missing publication id, name, or url');
   }
   if (!Array.isArray(instance.geographies) || instance.geographies.length === 0) {
     fail('instance.json geographies must be a non-empty array');
@@ -85,6 +85,10 @@ export function validateBallot(ballot, instance) {
     const where = `race "${race.id ?? race.office ?? '(unidentified)'}"`;
     if (!race.id || !race.office || !race.level) {
       fail(`${where} is missing id, office, or level`);
+    }
+    // "" is valid — it means no what-this-office-does line for this race.
+    if (typeof race.office_note !== 'string') {
+      fail(`${where} office_note must be a string`);
     }
     if (!Array.isArray(race.geography) || race.geography.length === 0) {
       fail(`${where} has no geography tags`);

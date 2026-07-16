@@ -1,6 +1,7 @@
 import { PARTY_LABEL } from '../parties.js';
 import CandidateCard from '../components/CandidateCard.jsx';
 import CoverageList from '../components/CoverageList.jsx';
+import ShareButton from '../components/ShareButton.jsx';
 
 export default function RaceDetail({ guide, raceId }) {
   const race = guide.ballot.races.find((r) => r.id === raceId);
@@ -22,13 +23,23 @@ export default function RaceDetail({ guide, raceId }) {
 
   return (
     <article>
-      <a className="back-link" href="#/">
-        ← All races
-      </a>
+      <div className="race-topbar">
+        <a className="back-link" href="#/">
+          ← All races
+        </a>
+        <ShareButton
+          instance={guide.instance}
+          election={guide.election}
+          path={`#/race/${race.id}`}
+          label="Share this race"
+          title={`${race.office} — ${guide.election.name}`}
+        />
+      </div>
       <h2 className="race-title">
         {race.office}
         {race.open_seat && <span className="badge badge-open">Open seat</span>}
       </h2>
+      {race.office_note && <p className="office-note">{race.office_note}</p>}
       <p className="race-context">{race.context}</p>
 
       {guide.ballot.questions.some((q) => q.race_id === race.id) && (
